@@ -4,4 +4,6 @@ MCM CONTEST 2021
 
 TEAM 019
 
-## qzj
+ZHANG Jiaying
+QIN Zijian
+CHEN Yizhou
