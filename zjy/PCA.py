@@ -5,8 +5,8 @@ plt.style.use('seaborn-whitegrid')
 plt.rc('font', **{'family': 'Microsoft YaHei, SimHei'})
 # 设置中文字体的支持
 
-df = pd.read_csv('loan_apply.csv')
-df = pd.DataFrame(file)
+file_read = pd.read_csv('loan_apply.csv')
+df = pd.DataFrame(file_read)
 print(df)
 # 求解相关系数矩阵，证明做主成分分析的必要性
 ## 丢弃无用的 ID 列
