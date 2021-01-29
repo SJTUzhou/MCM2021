@@ -7,3 +7,4 @@ pwd/test*
 pwd/self_pas.py
 qzj/*.bbl
 qzj/*.dvi
+qzj/Data*
