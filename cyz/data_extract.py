@@ -8,7 +8,7 @@ df1 = pd.read_csv(myDataDir+file1,sep=',')
 df1.dropna(axis=0, how='any', inplace=True)
 
 
-df1["DIRECTION"] = df1['PORT_BEGIN'] + df1['PORT_END']
+df1["DIRECTION"] = df1['PORT_BEGIN'] + "_" + df1['PORT_END']
 direction_list = pd.unique(df1["DIRECTION"])
 
 info_list = []
@@ -31,5 +31,6 @@ for direction in direction_list:
     info_list.append(myDict) 
 
 info_df = pd.DataFrame(info_list)
+print(info_df)
 info_df.to_csv("./direction.csv", index=False)
 
