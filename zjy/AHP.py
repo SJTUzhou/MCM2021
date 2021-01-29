@@ -22,8 +22,8 @@ def judgexMatrix(filePath):
     data = fr.readlines()
     column = len(data[0].strip().split(','))
     row = len(data)
-    print("column:", column);
-    print("row:", row);
+    print("column:", column)
+    print("row:", row)
     index = 0
     judgeMatrix = zeros((row,column))
     for line in data:
