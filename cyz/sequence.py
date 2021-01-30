@@ -13,10 +13,11 @@ df2["DIRECTION"] = df2['PORT_BEGIN'] + "_" + df2['PORT_END']
 # 修改时间，保留年月日
 df2["WBL_AUD_DT"] = df2["WBL_AUD_DT"].apply(lambda x: pd.to_datetime(x.split()[0]))
 
-'''
+
 # 修改container容积
 df2["CNTR_TYPE"] = df2["CNTR_TYPE"].apply(lambda x: int(x[:2]))
 
+'''
 
 dir_dfs = []
 
@@ -37,16 +38,18 @@ for dir_df in dir_dfs:
 print(df_DIR_SVVD_DATE_AMT_lst[0])
 '''
 
-df2["VOLUME"] = 1
-myDirTsk3_1 = '钦州_宁波'
+# df2["VOLUME"] = 1
+df2["VOLUME"] = df2["CNTR_TYPE"]
+myDirTsk3_1 = '营口_钦州'#'营口_南沙'#'新港_南沙' #'钦州_宁波'
 temp_df = df2.loc[(df2["DIRECTION"]==myDirTsk3_1) & (df2["IS_EMPTY"]==0)]
 temp_df = temp_df[["SVVD","WBL_AUD_DT","AMT","VOLUME","DIRECTION"]]
+
 statistic_df = temp_df.groupby(["DIRECTION","SVVD","WBL_AUD_DT"])[['AMT',"VOLUME"]].sum().reset_index()
 # Each direction, each SVVD, each day: avg freight rate and daily volume
 statistic_df["AMT"] = statistic_df["AMT"]/statistic_df["VOLUME"]
 print(statistic_df)
-# plt.scatter(statistic_df["VOLUME"], statistic_df["AMT"],marker="^")
-# plt.xlabel("Daily Volume")
-# plt.ylabel("Daily Avg AMT")
-# plt.show()
-# statistic_df.to_csv("./钦州_宁波.csv", index=False)
+plt.scatter(statistic_df["VOLUME"], statistic_df["AMT"],marker="^")
+plt.xlabel("Daily Volume")
+plt.ylabel("Daily Avg AMT")
+plt.show()
+statistic_df.to_csv("./{}.csv".format(myDirTsk3_1), index=False)
