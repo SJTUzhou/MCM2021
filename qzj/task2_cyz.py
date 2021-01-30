@@ -27,6 +27,9 @@ for seletion in top10_seletion:
         time_list = pd.unique(same_time_svvd)
         time_counts = same_time_svvd.value_counts(sort=False)
         time_counts = time_counts.sort_index()
+
+        AMT_count = same_svvd[5]
+        AMT_count_list = pd.unique(AMT_count)
         # 提前了几天
         time_before = time_list[-1] - time_list
         time_before_days = time_before.astype('timedelta64[D]').astype(int)
@@ -49,7 +52,7 @@ for seletion in top10_seletion:
         df2 = pd.DataFrame({'before_days':large_count.index, 'average_count': large_count.values})
         df2['num'] = 'large'
         #filename = 'qzj/habbits/' + seletion+'_large.csv'
-        figurename = 'qzj/habbits/' + seletion+'.png'
+        figurename = 'qzj/cyz_thoughts/' + seletion+'.png'
         ax = df2.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
         ax.set_ylabel('Average Container Quantity')
         ax.set_xlabel('Days Before Sailing')
@@ -130,7 +133,7 @@ for seletion in top10_seletion:
     tmp_1['FLOW'] = seletion
     tmp_2 = pd.concat([tmp_2,tmp_1])
 
-tmp_2.to_csv('qzj/habbits/final.csv')
+#tmp_2.to_csv('qzj/habbits/final.csv')
 
 
         

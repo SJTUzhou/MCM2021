@@ -25,6 +25,7 @@ for seletion in top10_seletion:
         same_time_svvd = pd.to_datetime(same_svvd[1])
         time_list = pd.unique(same_time_svvd)
         time_counts = same_time_svvd.value_counts(sort=False)
+        time_counts = time_counts.sort_index()
         
         time_list_str = pd.unique(same_svvd[1])
         AMT_list = []
