@@ -41,6 +41,13 @@ for seletion in top10_seletion:
             #svvd_info_large.rename_axis(svvd, axis=1, inplace=True)
             svvd_info_large['SVVD'] = svvd
             #svvd_info_large.set_index('before_days')
+            tmp_large = pd.concat([tmp_large, svvd_info_large])
+            large_count = tmp_large.groupby(by='before_days')['count'].sum()/svvd_num
+            df2 = pd.DataFrame({'before_days':large_count.index, 'average_count': large_count.values})
+            filename = 'qzj/habbits/' + seletion+'_large.csv'
+            df2.to_csv(filename)
+            #print(type(large_count))
+            #print(1)
 
         else:
             same_time_svvd = pd.to_datetime(same_svvd[1])
@@ -60,15 +67,13 @@ for seletion in top10_seletion:
             svvd_info_small = pd.DataFrame({'count': sum_s_list, 'before_days': before_list})
             svvd_info_small['SVVD'] = svvd
             #svvd_info_small.set_index('before_days')
-
-        tmp_large = pd.concat([tmp_large, svvd_info_large])
-        tmp_small = pd.concat([tmp_small, svvd_info_small])
-        #tmp_large['PORT'] = 'str(seletion)'
+            tmp_small = pd.concat([tmp_small, svvd_info_small])
+            small_count = tmp_small.groupby(by='before_days')['count'].sum()/svvd_num
+            df2 = pd.DataFrame({'before_days':small_count.index, 'average_count': small_count.values})
+            filename = 'qzj/habbits/' + seletion+'_small.csv'
+            df2.to_csv(filename)
 
         
-
-    large_count = tmp_large.groupby(by='before_days')['count'].sum()
-    #small_count = tmp_small.groupby(by='before_days')['count'].sum
         
             
 
