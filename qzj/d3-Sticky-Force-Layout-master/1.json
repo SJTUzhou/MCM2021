@@ -1,0 +1,2002 @@
+[
+    { source: '新港', target: '南沙'
+    },
+    { source: '营口', target: '南沙'
+    },
+    { source: '营口', target: '宁波'
+    },
+    { source: '钦州', target: '宁波'
+    },
+    { source: '营口', target: '福清'
+    },
+    { source: '营口', target: '钦州'
+    },
+    { source: '上海', target: '烟台'
+    },
+    { source: '日照', target: '铁山'
+    },
+    { source: '上海', target: '武汉'
+    },
+    { source: '乐从', target: '营口'
+    },
+    { source: '营口', target: '泸州'
+    },
+    { source: '秦皇岛', target: '重庆'
+    },
+    { source: '大连', target: '黄石'
+    },
+    { source: '新港', target: '鱼珠'
+    },
+    { source: '营口', target: '深圳（大铲湾）'
+    },
+    { source: '营口', target: '上海'
+    },
+    { source: '营口', target: '汕头'
+    },
+    { source: '宜宾', target: '马尾'
+    },
+    { source: '营口', target: '海口'
+    },
+    { source: '营口', target: '新沙'
+    },
+    { source: '常德', target: '北海'
+    },
+    { source: '钦州', target: '日照'
+    },
+    { source: '新港', target: '深圳（大铲湾）'
+    },
+    { source: '宜宾', target: '福清'
+    },
+    { source: '董家口', target: '阳江'
+    },
+    { source: '万州', target: '湛江'
+    },
+    { source: '寿光', target: '海口'
+    },
+    { source: '石岛', target: '钦州'
+    },
+    { source: '重庆', target: '新会新港'
+    },
+    { source: '新港', target: '汕头'
+    },
+    { source: '连云港', target: '阳江'
+    },
+    { source: '涪陵', target: '南沙'
+    },
+    { source: '大连', target: '海口'
+    },
+    { source: '寿光', target: '湛江'
+    },
+    { source: '石岛', target: '深圳（大铲湾）'
+    },
+    { source: '烟台', target: '惠州'
+    },
+    { source: '新港', target: '重庆'
+    },
+    { source: '石岛', target: '珠海（高栏）'
+    },
+    { source: '合肥', target: '海口'
+    },
+    { source: '锦州', target: '宜宾'
+    },
+    { source: '大连', target: '小塘西'
+    },
+    { source: '江阴', target: '宁德'
+    },
+    { source: '重庆', target: '深圳（大铲湾）'
+    },
+    { source: '新港', target: '黄埔旧港'
+    },
+    { source: '涪陵', target: '虎门'
+    },
+    { source: '日照', target: '深圳（大铲湾）'
+    },
+    { source: '龙口', target: '梧州（李家庄）'
+    },
+    { source: '丹东', target: '泸州'
+    },
+    { source: '营口', target: '泉州'
+    },
+    { source: '惠州', target: '长沙'
+    },
+    { source: '寿光', target: '鱼珠'
+    },
+    { source: '肇庆（三榕）', target: '荆州'
+    },
+    { source: '乐平', target: '荆州'
+    },
+    { source: '广利港', target: '白坭'
+    },
+    { source: '威海', target: '珠海（高栏）'
+    },
+    { source: '大连', target: '肇庆（新港）'
+    },
+    { source: '广利港', target: '鸦岗'
+    },
+    { source: '营口', target: '德庆'
+    },
+    { source: '潍坊', target: '庙沙围'
+    },
+    { source: '寿光', target: '深圳（大铲湾）'
+    },
+    { source: '广利港', target: '虎门'
+    },
+    { source: '龙口', target: '鹏成'
+    },
+    { source: '寿光', target: '新会新港'
+    },
+    { source: '广利港', target: '新会新港'
+    },
+    { source: '寿光', target: '石龙'
+    },
+    { source: '宜宾', target: '泉州'
+    },
+    { source: '荆州', target: '马尾'
+    },
+    { source: '莱州', target: '虎门'
+    },
+    { source: '广利港', target: '南沙'
+    },
+    { source: '龙口', target: '三埠'
+    },
+    { source: '扬州', target: '贵港'
+    },
+    { source: '龙口', target: '珠海洪湾'
+    },
+    { source: '连云港', target: '高明'
+    },
+    { source: '营口', target: '漳州'
+    },
+    { source: '烟台', target: '双水小冈'
+    },
+    { source: '青岛', target: '新沙'
+    },
+    { source: '鸦岗', target: '营口'
+    },
+    { source: '营口', target: '马尾'
+    },
+    { source: '荆州', target: '小榄'
+    },
+    { source: '马鞍山', target: '马尾'
+    },
+    { source: '镇江', target: '钦州'
+    },
+    { source: '江阴', target: '铁山'
+    },
+    { source: '石岛', target: '湛江'
+    },
+    { source: '北海', target: '蚌埠'
+    },
+    { source: '秦皇岛', target: '北海'
+    },
+    { source: '黄骅', target: '海安'
+    },
+    { source: '青岛', target: '东莞海腾'
+    },
+    { source: '日照', target: '鹤山'
+    },
+    { source: '威海', target: '钦州'
+    },
+    { source: '南沙', target: '营口'
+    },
+    { source: '丹东', target: '新会新港'
+    },
+    { source: '合肥', target: '小铲滩'
+    },
+    { source: '青岛', target: '三埠'
+    },
+    { source: '上海', target: '营口'
+    },
+    { source: '新港', target: '镇江'
+    },
+    { source: '九江（江西）', target: '中山'
+    },
+    { source: '汕头', target: '营口'
+    },
+    { source: '烟台', target: '南沙'
+    },
+    { source: '扬州', target: '惠州'
+    },
+    { source: '秦皇岛', target: '神湾'
+    },
+    { source: '云浮', target: '万州'
+    },
+    { source: '青岛', target: '乐平'
+    },
+    { source: '营口', target: '乐从'
+    },
+    { source: '营口', target: '海安'
+    },
+    { source: '石岛', target: '南沙'
+    },
+    { source: '太仓', target: '钦州'
+    },
+    { source: '龙口', target: '小铲滩'
+    },
+    { source: '岳阳', target: '北海'
+    },
+    { source: '贵港', target: '上海'
+    },
+    { source: '贵港', target: '常州'
+    },
+    { source: '锦州', target: '重庆'
+    },
+    { source: '龙口', target: '海口'
+    },
+    { source: '秦皇岛', target: '东江仓'
+    },
+    { source: '新港', target: '勒流'
+    },
+    { source: '秦皇岛', target: '小榄'
+    },
+    { source: '威海', target: '洋浦港'
+    },
+    { source: '海安', target: '惠州'
+    },
+    { source: '马鞍山', target: '三埠'
+    },
+    { source: '常州', target: '汕头'
+    },
+    { source: '烟台', target: '福清'
+    },
+    { source: '新港', target: '福清'
+    },
+    { source: '大连', target: '漳州'
+    },
+    { source: '宁德', target: '泸州'
+    },
+    { source: '秦皇岛', target: '台山'
+    },
+    { source: '连云港', target: '深圳（大铲湾）'
+    },
+    { source: '泉州', target: '营口'
+    },
+    { source: '新港', target: '海口'
+    },
+    { source: '北海', target: '烟台'
+    },
+    { source: '上海', target: '汕头'
+    },
+    { source: '德清', target: '马尾'
+    },
+    { source: '马鞍山', target: '阳江'
+    },
+    { source: '龙口', target: '泉州'
+    },
+    { source: '南通', target: '中山'
+    },
+    { source: '龙通', target: '温州'
+    },
+    { source: '新港', target: '乍浦'
+    },
+    { source: '扬州', target: '三埠'
+    },
+    { source: '日照', target: '珠海洪湾'
+    },
+    { source: '扬州', target: '四会'
+    },
+    { source: '扬州', target: '顺乐'
+    },
+    { source: '泰州', target: '四会'
+    },
+    { source: '太仓', target: '虎门'
+    },
+    { source: '龙口', target: '重庆'
+    },
+    { source: '曹妃甸', target: '南京'
+    },
+    { source: '小铲滩', target: '九江（江西）'
+    },
+    { source: '鹏成', target: '重庆'
+    },
+    { source: '长沙', target: '大连'
+    },
+    { source: '威海', target: '南沙'
+    },
+    { source: '海口', target: '大连'
+    },
+    { source: '烟台', target: '鹏成'
+    },
+    { source: '宜宾', target: '厦门'
+    },
+    { source: '青岛', target: '泸州'
+    },
+    { source: '马鞍山', target: '南庄'
+    },
+    { source: '青岛', target: '武汉'
+    },
+    { source: '盘锦', target: '重庆'
+    },
+    { source: '黄骅', target: '肇庆（新港）'
+    },
+    { source: '汕头', target: '万州'
+    },
+    { source: '茂名水东', target: '上海'
+    },
+    { source: '张家港', target: '三水'
+    },
+    { source: '铜陵', target: '高明'
+    },
+    { source: '曹妃甸', target: '东江仓'
+    },
+    { source: '泰州', target: '三水'
+    },
+    { source: '太仓', target: '重庆'
+    },
+    { source: '贵港', target: '太仓'
+    },
+    { source: '南昌', target: '小铲滩'
+    },
+    { source: '北海', target: '德清'
+    },
+    { source: '丹东', target: '重庆'
+    },
+    { source: '威海', target: '海口'
+    },
+    { source: '小榄', target: '营口'
+    },
+    { source: '泰州', target: '钦州'
+    },
+    { source: '寿光', target: '马尾'
+    },
+    { source: '锦州', target: '泸州'
+    },
+    { source: '日照', target: '上海'
+    },
+    { source: '小铲滩', target: '日照'
+    },
+    { source: '泉州', target: '泸州'
+    },
+    { source: '南京', target: '海口'
+    },
+    { source: '漳州', target: '泸州'
+    },
+    { source: '泰州', target: '台山'
+    },
+    { source: '泰州', target: '勒流'
+    },
+    { source: '泰州', target: '高明'
+    },
+    { source: '三水', target: '广利港'
+    },
+    { source: '南京', target: '双水小冈'
+    },
+    { source: '南京', target: '石龙'
+    },
+    { source: '大连', target: '重庆'
+    },
+    { source: '烟台', target: '重庆'
+    },
+    { source: '宿迁', target: '乐平'
+    },
+    { source: '海口', target: '大麦屿'
+    },
+    { source: '茂名水东', target: '龙门'
+    },
+    { source: '宁波', target: '北海'
+    },
+    { source: '镇江', target: '乐平'
+    },
+    { source: '宁波', target: '铁山'
+    },
+    { source: '德清', target: '小榄'
+    },
+    { source: '镇江', target: '勒流'
+    },
+    { source: '镇江', target: '新会新港'
+    },
+    { source: '德清', target: '白坭'
+    },
+    { source: '长兴', target: '顺德新港'
+    },
+    { source: '宜兴', target: '中山'
+    },
+    { source: '镇江', target: '贵港'
+    },
+    { source: '张家港', target: '高明'
+    },
+    { source: '寿光', target: '南沙'
+    },
+    { source: '泸州', target: '马尾'
+    },
+    { source: '秦皇岛', target: '外沙'
+    },
+    { source: '营口', target: '湛江'
+    },
+    { source: '烟台', target: '花都（炭步）'
+    },
+    { source: '茂名水东', target: '宜兴'
+    },
+    { source: '泰州', target: '三埠'
+    },
+    { source: '海口', target: '德清'
+    },
+    { source: '连云港', target: '洋浦港'
+    },
+    { source: '泰州', target: '顺乐'
+    },
+    { source: '新港', target: '外沙'
+    },
+    { source: '蚌埠', target: '双水小冈'
+    },
+    { source: '厦门', target: '重庆'
+    },
+    { source: '宁波', target: '洋浦港'
+    },
+    { source: '威海', target: '福清'
+    },
+    { source: '常州', target: '海口'
+    },
+    { source: '寿光', target: '泉州'
+    },
+    { source: '镇江', target: '南沙'
+    },
+    { source: '海安', target: '黄埔旧港'
+    },
+    { source: '乍浦', target: '小铲滩'
+    },
+    { source: '营口', target: '重庆'
+    },
+    { source: '新港', target: '湛江'
+    },
+    { source: '南沙', target: '威海'
+    },
+    { source: '德清', target: '中山'
+    },
+    { source: '珠海（高栏）', target: '威海'
+    },
+    { source: '紫金村', target: '常州'
+    },
+    { source: '黄骅', target: '乌冲口'
+    },
+    { source: '南通', target: '北海'
+    },
+    { source: '锦州', target: '宁波'
+    },
+    { source: '威海', target: '深圳（大铲湾）'
+    },
+    { source: '宁德', target: '宜宾'
+    },
+    { source: '德清', target: '汕头'
+    },
+    { source: '长兴', target: '深圳（大铲湾）'
+    },
+    { source: '上海', target: '石龙'
+    },
+    { source: '德清', target: '珠海（高栏）'
+    },
+    { source: '营口', target: '温州'
+    },
+    { source: '张家港', target: '新会新港'
+    },
+    { source: '日照', target: '肇庆（新港）'
+    },
+    { source: '秦皇岛', target: '鱼珠'
+    },
+    { source: '重庆', target: '营口'
+    },
+    { source: '营口', target: '涪陵'
+    },
+    { source: '马鞍山', target: '鹤山'
+    },
+    { source: '肇庆（新港）', target: '长兴'
+    },
+    { source: '黄骅', target: '南沙'
+    },
+    { source: '黄埔旧港', target: '重庆'
+    },
+    { source: '小铲滩', target: '海安'
+    },
+    { source: '小铲滩', target: '南京'
+    },
+    { source: '小铲滩', target: '苏州'
+    },
+    { source: '小铲滩', target: '淮安'
+    },
+    { source: '湛江', target: '重庆'
+    },
+    { source: '海口', target: '马尾'
+    },
+    { source: '徐州', target: '南沙'
+    },
+    { source: '海口', target: '汕头'
+    },
+    { source: '大丰', target: '顺德新港'
+    },
+    { source: '寿光', target: '博罗'
+    },
+    { source: '岳阳', target: '大连'
+    },
+    { source: '龙口', target: '福清'
+    },
+    { source: '马鞍山', target: '虎门'
+    },
+    { source: '福鼎', target: '小铲滩'
+    },
+    { source: '乍浦', target: '乐从'
+    },
+    { source: '乍浦', target: '顺德新港'
+    },
+    { source: '泸州', target: '宁德'
+    },
+    { source: '乍浦', target: '三水'
+    },
+    { source: '乍浦', target: '惠州'
+    },
+    { source: '乍浦', target: '鱼珠'
+    },
+    { source: '青岛', target: '石龙'
+    },
+    { source: '乍浦', target: '九江（顺德）'
+    },
+    { source: '乍浦', target: '花都（炭步）'
+    },
+    { source: '嘉兴', target: '珠海（高栏）'
+    },
+    { source: '新港', target: '长沙'
+    },
+    { source: '广利港', target: '黄埔旧港'
+    },
+    { source: '紫金村', target: '大连'
+    },
+    { source: '烟台', target: '肇庆（三榕）'
+    },
+    { source: '董家口', target: '宁波'
+    },
+    { source: '黄骅', target: '小铲滩'
+    },
+    { source: '黄埔旧港', target: '芜湖'
+    },
+    { source: '小铲滩', target: '乐从'
+    },
+    { source: '重庆', target: '福清'
+    },
+    { source: '龙口', target: '中山'
+    },
+    { source: '营口', target: '中山'
+    },
+    { source: '龙口', target: '龙通'
+    },
+    { source: '秦皇岛', target: '无锡'
+    },
+    { source: '乍浦', target: '勒流'
+    },
+    { source: '营口', target: '鸦岗'
+    },
+    { source: '重庆', target: '马尾'
+    },
+    { source: '芜湖', target: '高明'
+    },
+    { source: '营口', target: '鱼珠'
+    },
+    { source: '马鞍山', target: '新会新港'
+    },
+    { source: '董家口', target: '万州'
+    },
+    { source: '合肥', target: '泉州'
+    },
+    { source: '上海', target: '贵港'
+    },
+    { source: '九江（江西）', target: '小铲滩'
+    },
+    { source: '青岛', target: '万州'
+    },
+    { source: '董家口', target: '重庆'
+    },
+    { source: '董家口', target: '福清'
+    },
+    { source: '蚌埠', target: '海口'
+    },
+    { source: '龙通', target: '乍浦'
+    },
+    { source: '营口', target: '东江仓'
+    },
+    { source: '新港', target: '珠海洪湾'
+    },
+    { source: '梧州（李家庄）', target: '常州'
+    },
+    { source: '龙口', target: '汕头'
+    },
+    { source: '营口', target: '乐平'
+    },
+    { source: '宁波', target: '花都巴江'
+    },
+    { source: '双水小冈', target: '海口'
+    },
+    { source: '涪陵', target: '汕头'
+    },
+    { source: '厦门', target: '宜宾'
+    },
+    { source: '青岛', target: '重庆'
+    },
+    { source: '岳阳', target: '海口'
+    },
+    { source: '上海', target: '湛江'
+    },
+    { source: '漳州', target: '宜宾'
+    },
+    { source: '烟台', target: '珠海洪湾'
+    },
+    { source: '顺德新港', target: '洋浦港'
+    },
+    { source: '安吉', target: '泸州'
+    },
+    { source: '重庆', target: '汕头'
+    },
+    { source: '新港', target: '龙通'
+    },
+    { source: '如皋', target: '汕头'
+    },
+    { source: '烟台', target: '九江（顺德）'
+    },
+    { source: '江阴', target: '小铲滩'
+    },
+    { source: '董家口', target: '小铲滩'
+    },
+    { source: '烟台', target: '上海'
+    },
+    { source: '高明', target: '江阴'
+    },
+    { source: '大连', target: '长沙'
+    },
+    { source: '北海', target: '嘉兴'
+    },
+    { source: '龙口', target: '德庆'
+    },
+    { source: '青岛', target: '阳江'
+    },
+    { source: '德清', target: '虎门'
+    },
+    { source: '锦州', target: '鱼珠'
+    },
+    { source: '荆州', target: '福清'
+    },
+    { source: '唐山', target: '鱼珠'
+    },
+    { source: '秦皇岛', target: '九江（江西）'
+    },
+    { source: '海口', target: '小铲滩'
+    },
+    { source: '新港', target: '肇庆（新港）'
+    },
+    { source: '鸦岗', target: '小铲滩'
+    },
+    { source: '新会新港', target: '洋浦港'
+    },
+    { source: '铜陵', target: '鱼珠'
+    },
+    { source: '宁波', target: '小铲滩'
+    },
+    { source: '荆州', target: '厦门'
+    },
+    { source: '小铲滩', target: '东莞海腾'
+    },
+    { source: '锦州', target: '衡阳'
+    },
+    { source: '烟台', target: '深圳（大铲湾）'
+    },
+    { source: '小榄', target: '海口'
+    },
+    { source: '南通', target: '昆明'
+    },
+    { source: '紫金村', target: '唐山'
+    },
+    { source: '烟台', target: '钦州'
+    },
+    { source: '乐平', target: '南通'
+    },
+    { source: '安庆', target: '珠海（高栏）'
+    },
+    { source: '石龙', target: '小铲滩'
+    },
+    { source: '湛江', target: '中山'
+    },
+    { source: '北海', target: '南京'
+    },
+    { source: '扬州', target: '湛江'
+    },
+    { source: '小塘西', target: '海口'
+    },
+    { source: '四会', target: '扬州'
+    },
+    { source: '威海', target: '小铲滩'
+    },
+    { source: '烟台', target: '德清'
+    },
+    { source: '涪陵', target: '中山'
+    },
+    { source: '锦州', target: '赤水'
+    },
+    { source: '涪陵', target: '海口'
+    },
+    { source: '烟台', target: '南昌'
+    },
+    { source: '南通', target: '湛江'
+    },
+    { source: '涪陵', target: '小塘'
+    },
+    { source: '重庆', target: '南庄'
+    },
+    { source: '泸州', target: '云浮'
+    },
+    { source: '营口', target: '鹤山'
+    },
+    { source: '重庆', target: '泉州'
+    },
+    { source: '重庆', target: '虎门'
+    },
+    { source: '威海', target: '厦门'
+    },
+    { source: '泸州', target: '小铲滩'
+    },
+    { source: '江阴', target: '泸州'
+    },
+    { source: '镇江', target: '泸州'
+    },
+    { source: '日照', target: '龙通'
+    },
+    { source: '宁德', target: '重庆'
+    },
+    { source: '石龙', target: '洋浦港'
+    },
+    { source: '铁山', target: '大连'
+    },
+    { source: '江阴', target: '海口'
+    },
+    { source: '营口', target: '厦门'
+    },
+    { source: '德清', target: '黄埔旧港'
+    },
+    { source: '福鼎', target: '顺乐'
+    },
+    { source: '常州', target: '小铲滩'
+    },
+    { source: '深圳（大铲湾）', target: '常州'
+    },
+    { source: '烟台', target: '顺德新港'
+    },
+    { source: '万州', target: '泉州'
+    },
+    { source: '太仓', target: '厦门'
+    },
+    { source: '烟台', target: '岳阳'
+    },
+    { source: '连云港', target: '顺德新港'
+    },
+    { source: '嘉兴', target: '泸州'
+    },
+    { source: '锦州', target: '海口'
+    },
+    { source: '泸州', target: '汕头'
+    },
+    { source: '连云港', target: '东江仓'
+    },
+    { source: '龙口', target: '北海'
+    },
+    { source: '营口', target: '武汉'
+    },
+    { source: '新港', target: '庙沙围'
+    },
+    { source: '宜宾', target: '汕头'
+    },
+    { source: '宜宾', target: '茂名水东'
+    },
+    { source: '武汉', target: '小铲滩'
+    },
+    { source: '黄骅', target: '乐从'
+    },
+    { source: '烟台', target: '小铲滩'
+    },
+    { source: '营口', target: '阳江'
+    },
+    { source: '营口', target: '武林'
+    },
+    { source: '营口', target: '南昌'
+    },
+    { source: '海口', target: '东江仓'
+    },
+    { source: '新港', target: '泉州'
+    },
+    { source: '虎门', target: '江阴'
+    },
+    { source: '寿光', target: '黄埔旧港'
+    },
+    { source: '如皋', target: '泸州'
+    },
+    { source: '宜宾', target: '顺乐'
+    },
+    { source: '新港', target: '小铲滩'
+    },
+    { source: '黄骅', target: '珠海（高栏）'
+    },
+    { source: '北海', target: '南昌'
+    },
+    { source: '连云港', target: '龙通'
+    },
+    { source: '泸州', target: '中山'
+    },
+    { source: '乐从', target: '大连'
+    },
+    { source: '黄埔旧港', target: '张家港'
+    },
+    { source: '北海', target: '上海'
+    },
+    { source: '涪陵', target: '黄埔旧港'
+    },
+    { source: '营口', target: '衡阳'
+    },
+    { source: '德清', target: '深圳（大铲湾）'
+    },
+    { source: '三埠', target: '乍浦'
+    },
+    { source: '常熟', target: '重庆'
+    },
+    { source: '泸州', target: '海口'
+    },
+    { source: '宁波', target: '花都（炭步）'
+    },
+    { source: '盘锦', target: '马尾'
+    },
+    { source: '新港', target: '紫金村'
+    },
+    { source: '肇庆（新港）', target: '海口'
+    },
+    { source: '日照', target: '南沙'
+    },
+    { source: '涪陵', target: '泉州'
+    },
+    { source: '涪陵', target: '珠海（高栏）'
+    },
+    { source: '常熟', target: '泉州'
+    },
+    { source: '莱州', target: '茂名水东'
+    },
+    { source: '南沙', target: '江阴'
+    },
+    { source: '小塘西', target: '乍浦'
+    },
+    { source: '万州', target: '虎门'
+    },
+    { source: '万州', target: '深圳（大铲湾）'
+    },
+    { source: '莱州', target: '阳江'
+    },
+    { source: '宜兴', target: '黄埔旧港'
+    },
+    { source: '武汉', target: '海口'
+    },
+    { source: '莱州', target: '北海'
+    },
+    { source: '泸州', target: '泉州'
+    },
+    { source: '威海', target: '龙通'
+    },
+    { source: '宜宾', target: '小铲滩'
+    },
+    { source: '梧州（李家庄）', target: '秦皇岛'
+    },
+    { source: '龙口', target: '湛江'
+    },
+    { source: '宁波', target: '勒流'
+    },
+    { source: '乍浦', target: '海口'
+    },
+    { source: '泸州', target: '黄埔旧港'
+    },
+    { source: '珠海（高栏）', target: '黄骅'
+    },
+    { source: '荆州', target: '贵港'
+    },
+    { source: '黄骅', target: '漳州'
+    },
+    { source: '荆州', target: '宁德'
+    },
+    { source: '荆州', target: '赤水'
+    },
+    { source: '新港', target: '厦门'
+    },
+    { source: '泸州', target: '顺德新港'
+    },
+    { source: '锦州', target: '贵港苏湾'
+    },
+    { source: '赣州', target: '小铲滩'
+    },
+    { source: '营口', target: '龙通'
+    },
+    { source: '大连', target: '乐从'
+    },
+    { source: '小铲滩', target: '顺乐'
+    },
+    { source: '高明', target: '万州'
+    },
+    { source: '安庆', target: '茂名水东'
+    },
+    { source: '秦皇岛', target: '南京'
+    },
+    { source: '泸州', target: '三埠'
+    },
+    { source: '锦州', target: '钦州'
+    },
+    { source: '江阴', target: '中山'
+    },
+    { source: '宜宾', target: '鹤山'
+    },
+    { source: '泸州', target: '鹤山'
+    },
+    { source: '泸州', target: '三水'
+    },
+    { source: '合肥', target: '烟台'
+    },
+    { source: '烟台', target: '茂名水东'
+    },
+    { source: '泸州', target: '惠州'
+    },
+    { source: '泸州', target: '台山'
+    },
+    { source: '泸州', target: '四会'
+    },
+    { source: '宜宾', target: '三埠'
+    },
+    { source: '广利港', target: '钦州'
+    },
+    { source: '寿光', target: '钦州'
+    },
+    { source: '日照', target: '洋浦港'
+    },
+    { source: '龙口', target: '茂名水东'
+    },
+    { source: '泰州', target: '珠海（高栏）'
+    },
+    { source: '博罗', target: '小铲滩'
+    },
+    { source: '宜宾', target: '营口'
+    },
+    { source: '长沙', target: '小铲滩'
+    },
+    { source: '宜兴', target: '宜宾'
+    },
+    { source: '青岛', target: '虎门'
+    },
+    { source: '潍坊', target: '小铲滩'
+    },
+    { source: '湛江', target: '南沙'
+    },
+    { source: '芜湖', target: '铁山'
+    },
+    { source: '泸州', target: '虎门'
+    },
+    { source: '花都巴江', target: '黄骅'
+    },
+    { source: '贵港', target: '烟台'
+    },
+    { source: '营口', target: '常德'
+    },
+    { source: '芜湖', target: '小铲滩'
+    },
+    { source: '重庆', target: '珠海（高栏）'
+    },
+    { source: '连云港', target: '小塘西'
+    },
+    { source: '日照', target: '清远清新'
+    },
+    { source: '钦州', target: '连云港'
+    },
+    { source: '小铲滩', target: '小榄'
+    },
+    { source: '营口', target: '新会新港'
+    },
+    { source: '青岛', target: '小铲滩'
+    },
+    { source: '安庆', target: '钦州'
+    },
+    { source: '安庆', target: '湛江'
+    },
+    { source: '乍浦', target: '泉州'
+    },
+    { source: '莱州', target: '惠州'
+    },
+    { source: '宜宾', target: '虎门'
+    },
+    { source: '黄骅', target: '新会新港'
+    },
+    { source: '营口', target: '岳阳'
+    },
+    { source: '黄埔旧港', target: '南京'
+    },
+    { source: '营口', target: '高明'
+    },
+    { source: '常州', target: '茂名水东'
+    },
+    { source: '博罗', target: '洋浦港'
+    },
+    { source: '深圳（大铲湾）', target: '上海'
+    },
+    { source: '小铲滩', target: '鱼珠'
+    },
+    { source: '德清', target: '重庆'
+    },
+    { source: '莱州', target: '贵港'
+    },
+    { source: '安吉', target: '重庆'
+    },
+    { source: '荆州', target: '福鼎'
+    },
+    { source: '铜陵', target: '茂名水东'
+    },
+    { source: '福鼎', target: '南沙'
+    },
+    { source: '黄骅', target: '珠海洪湾'
+    },
+    { source: '大连', target: '清远清新'
+    },
+    { source: '泸州', target: '厦门'
+    },
+    { source: '蚌埠', target: '茂名水东'
+    },
+    { source: '营口', target: '花都巴江'
+    },
+    { source: '荆州', target: '泉州'
+    },
+    { source: '芜湖', target: '湛江海安'
+    },
+    { source: '潍坊', target: '阳江'
+    },
+    { source: '龙口', target: '贵港'
+    },
+    { source: '南京', target: '湛江海安'
+    },
+    { source: '海口', target: '鱼珠'
+    },
+    { source: '威海', target: '贵港'
+    },
+    { source: '大丰', target: '营口'
+    },
+    { source: '营口', target: '贵港'
+    },
+    { source: '丹东', target: '宜昌'
+    },
+    { source: '寿光', target: '惠州'
+    },
+    { source: '深圳（大铲湾）', target: '南通'
+    },
+    { source: '芜湖', target: '鹤山'
+    },
+    { source: '乍浦', target: '湛江'
+    },
+    { source: '莱州', target: '钦州'
+    },
+    { source: '连云港', target: '岳阳'
+    },
+    { source: '鱼珠', target: '上海'
+    },
+    { source: '重庆', target: '太仓'
+    },
+    { source: '广利港', target: '海口'
+    },
+    { source: '南通', target: '海口'
+    },
+    { source: '常州', target: '秦皇岛'
+    },
+    { source: '常德', target: '贵港'
+    },
+    { source: '连云港', target: '珠海（高栏）'
+    },
+    { source: '宜宾', target: '珠海（高栏）'
+    },
+    { source: '武汉', target: '宁德'
+    },
+    { source: '宁波', target: '九江（顺德）'
+    },
+    { source: '铜陵', target: '钦州'
+    },
+    { source: '扬州', target: '黄埔旧港'
+    },
+    { source: '上海', target: '泸州'
+    },
+    { source: '新会新港', target: '海口'
+    },
+    { source: '锦州', target: '桂平新龙'
+    },
+    { source: '秦皇岛', target: '小铲滩'
+    },
+    { source: '大连', target: '铁山'
+    },
+    { source: '小铲滩', target: '小铲滩'
+    },
+    { source: '上海', target: '泉州'
+    },
+    { source: '扬州', target: '营口'
+    },
+    { source: '营口', target: '荆州'
+    },
+    { source: '小铲滩', target: '福清'
+    },
+    { source: '营口', target: '北海'
+    },
+    { source: '小铲滩', target: '太仓'
+    },
+    { source: '寿光', target: '虎门'
+    },
+    { source: '中山', target: '海口'
+    },
+    { source: '荆州', target: '惠州'
+    },
+    { source: '荆州', target: '云浮'
+    },
+    { source: '黄石', target: '赤水'
+    },
+    { source: '淮安', target: '茂名水东'
+    },
+    { source: '武汉', target: '贵港'
+    },
+    { source: '如皋', target: '深圳（大铲湾）'
+    },
+    { source: '武汉', target: '阳江'
+    },
+    { source: '宜兴', target: '小铲滩'
+    },
+    { source: '新港', target: '钦州'
+    },
+    { source: '唐山', target: '南鲲'
+    },
+    { source: '宜兴', target: '钦州'
+    },
+    { source: '大连', target: '岳阳'
+    },
+    { source: '德清', target: '丹东'
+    },
+    { source: '广利港', target: '贵港'
+    },
+    { source: '新港', target: '九江（江西）'
+    },
+    { source: '丹东', target: '双水小冈'
+    },
+    { source: '张家港', target: '顺乐'
+    },
+    { source: '武汉', target: '武林'
+    },
+    { source: '锦州', target: '勒流'
+    },
+    { source: '漳州', target: '重庆'
+    },
+    { source: '嘉兴', target: '青岛'
+    },
+    { source: '营口', target: '小铲滩'
+    },
+    { source: '连云港', target: '海口'
+    },
+    { source: '马尾', target: '重庆'
+    },
+    { source: '宿迁', target: '黄埔旧港'
+    },
+    { source: '营口', target: '茂名水东'
+    },
+    { source: '潍坊', target: '茂名水东'
+    },
+    { source: '唐山', target: '荆州'
+    },
+    { source: '黄骅', target: '东江仓'
+    },
+    { source: '鸦岗', target: '泉州'
+    },
+    { source: '日照', target: '东莞海腾'
+    },
+    { source: '盘锦', target: '阳江'
+    },
+    { source: '张家港', target: '阳江'
+    },
+    { source: '锦州', target: '南鲲'
+    },
+    { source: '荆州', target: '北海'
+    },
+    { source: '宜昌', target: '湛江海安'
+    },
+    { source: '荆州', target: '茂名水东'
+    },
+    { source: '荆州', target: '湛江海安'
+    },
+    { source: '新港', target: '珠海（高栏）'
+    },
+    { source: '江阴', target: '茂名水东'
+    },
+    { source: '张家港', target: '湛江'
+    },
+    { source: '桂平新龙', target: '外沙'
+    },
+    { source: '锦州', target: '广浚东江口'
+    },
+    { source: '龙口', target: '黄埔旧港'
+    },
+    { source: '南通', target: '黄埔旧港'
+    },
+    { source: '武汉', target: '茂名水东'
+    },
+    { source: '惠州', target: '宁波'
+    },
+    { source: '乍浦', target: '珠海（高栏）'
+    },
+    { source: '大连', target: '惠州'
+    },
+    { source: '宜兴', target: '阳江'
+    },
+    { source: '武汉', target: '云浮'
+    },
+    { source: '营口', target: '四会'
+    },
+    { source: '黄骅', target: '湛江海安'
+    },
+    { source: '秦皇岛', target: '防城'
+    },
+    { source: '烟台', target: '汕头'
+    },
+    { source: '烟台', target: '营口'
+    },
+    { source: '上海', target: '青岛'
+    },
+    { source: '大连', target: '防城'
+    },
+    { source: '柳州武宣', target: '龙口'
+    },
+    { source: '锦州', target: '马尾'
+    },
+    { source: '大连', target: '中山'
+    },
+    { source: '大连', target: '钦州'
+    },
+    { source: '北海', target: '新港'
+    },
+    { source: '武汉', target: '湛江海安'
+    },
+    { source: '武汉', target: '防城'
+    },
+    { source: '董家口', target: '小榄'
+    },
+    { source: '东江仓', target: '宁波'
+    },
+    { source: '青岛', target: '长沙'
+    },
+    { source: '张家港', target: '虎门'
+    },
+    { source: '连云港', target: '桂平新龙'
+    },
+    { source: '小铲滩', target: '漳州'
+    },
+    { source: '南通', target: '小铲滩'
+    },
+    { source: '青岛', target: '常德'
+    },
+    { source: '威海', target: '漳州'
+    },
+    { source: '锦州', target: '乍浦'
+    },
+    { source: '唐山', target: '顺乐'
+    },
+    { source: '厦门', target: '淮安'
+    },
+    { source: '漳州', target: '涪陵'
+    },
+    { source: '日照', target: '台山'
+    },
+    { source: '乍浦', target: '锦州'
+    },
+    { source: '日照', target: '赤水'
+    },
+    { source: '石龙', target: '锦州'
+    },
+    { source: '衡阳', target: '新港'
+    },
+    { source: '烟台', target: '马尾'
+    },
+    { source: '南京', target: '湛江'
+    },
+    { source: '唐山', target: '重庆'
+    },
+    { source: '鸦岗', target: '海口'
+    },
+    { source: '大连', target: '宁波'
+    },
+    { source: '湛江', target: '南昌'
+    },
+    { source: '九江（江西）', target: '云浮'
+    },
+    { source: '乍浦', target: '茂名水东'
+    },
+    { source: '上海', target: '海口'
+    },
+    { source: '营口', target: '外沙'
+    },
+    { source: '营口', target: '新会'
+    },
+    { source: '铜陵', target: '马尾'
+    },
+    { source: '营口', target: '四会永泰'
+    },
+    { source: '大连', target: '龙通'
+    },
+    { source: '南通', target: '宁德'
+    },
+    { source: '营口', target: '九江（江西）'
+    },
+    { source: '宜宾', target: '龙口'
+    },
+    { source: '镇江', target: '茂名水东'
+    },
+    { source: '长兴', target: '阳江'
+    },
+    { source: '威海', target: '台山'
+    },
+    { source: '营口', target: '小榄'
+    },
+    { source: '乍浦', target: '营口'
+    },
+    { source: '大连', target: '勒流'
+    },
+    { source: '锦州', target: '福鼎'
+    },
+    { source: '福清', target: '鱼珠'
+    },
+    { source: '泰州', target: '宁德'
+    },
+    { source: '镇江', target: '小铲滩'
+    },
+    { source: '烟台', target: '防城'
+    },
+    { source: '泰州', target: '贵港'
+    },
+    { source: '丹东', target: '武林'
+    },
+    { source: '大连', target: '池州'
+    },
+    { source: '龙口', target: '南沙'
+    },
+    { source: '日照', target: '鸦岗'
+    },
+    { source: '锦州', target: '湛江'
+    },
+    { source: '威海', target: '高明'
+    },
+    { source: '池州', target: '锦州'
+    },
+    { source: '营口', target: '安吉'
+    },
+    { source: '上海', target: '涪陵'
+    },
+    { source: '连云港', target: '鸦岗'
+    },
+    { source: '青岛', target: '武林'
+    },
+    { source: '锦州', target: '小铲滩'
+    },
+    { source: '营口', target: '长兴'
+    },
+    { source: '营口', target: '梧州（李家庄）'
+    },
+    { source: '张家港', target: '小铲滩'
+    },
+    { source: '营口', target: '黄埔旧港'
+    },
+    { source: '秦皇岛', target: '南沙'
+    },
+    { source: '南沙', target: '洋浦港'
+    },
+    { source: '南京', target: '阳江'
+    },
+    { source: '镇江', target: '阳江'
+    },
+    { source: '常州', target: '珠海（高栏）'
+    },
+    { source: '荆州', target: '小铲滩'
+    },
+    { source: '莱州', target: '紫金村'
+    },
+    { source: '威海', target: '四会'
+    },
+    { source: '太仓', target: '万州'
+    },
+    { source: '荆州', target: '汕头'
+    },
+    { source: '泉州', target: '海安'
+    },
+    { source: '烟台', target: '南鲲'
+    },
+    { source: '广利港', target: '洋浦港'
+    },
+    { source: '龙口', target: '钦州'
+    },
+    { source: '潍坊', target: '北海'
+    },
+    { source: '宜宾', target: '江阴'
+    },
+    { source: '安吉', target: '营口'
+    },
+    { source: '潍坊', target: '深圳（大铲湾）'
+    },
+    { source: '营口', target: '博罗'
+    },
+    { source: '青岛', target: '深圳（大铲湾）'
+    },
+    { source: '常德', target: '汕头'
+    },
+    { source: '漳州', target: '大连'
+    },
+    { source: '荆州', target: '台山'
+    },
+    { source: '莱州', target: '石龙'
+    },
+    { source: '常州', target: '阳江'
+    },
+    { source: '日照', target: '三水'
+    },
+    { source: '广利港', target: '高明'
+    },
+    { source: '江门大鳌', target: '新港'
+    },
+    { source: '荆州', target: '阳江'
+    },
+    { source: '营口', target: '九江（顺德）'
+    },
+    { source: '黄骅', target: '高明'
+    },
+    { source: '寿光', target: '顺德新港'
+    },
+    { source: '长兴', target: '茂名水东'
+    },
+    { source: '南通', target: '武林'
+    },
+    { source: '营口', target: '乍浦'
+    },
+    { source: '南昌', target: '大连'
+    },
+    { source: '日照', target: '高明'
+    },
+    { source: '莱州', target: '花都（炭步）'
+    },
+    { source: '秦皇岛', target: '顺德新港'
+    },
+    { source: '日照', target: '黄埔旧港'
+    },
+    { source: '丹东', target: '阳江'
+    },
+    { source: '锦州', target: '塘源'
+    },
+    { source: '荆州', target: '小塘'
+    },
+    { source: '宜昌', target: '宁波'
+    },
+    { source: '荆州', target: '三水'
+    },
+    { source: '荆州', target: '海口'
+    },
+    { source: '荆州', target: '钦州'
+    },
+    { source: '荆州', target: '中山'
+    },
+    { source: '宜昌', target: '小塘'
+    },
+    { source: '荆州', target: '湛江'
+    },
+    { source: '荆州', target: '高明'
+    },
+    { source: '龙口', target: '顺德新港'
+    },
+    { source: '宜昌', target: '石龙'
+    },
+    { source: '荆州', target: '漳州'
+    },
+    { source: '青岛', target: '茂名水东'
+    },
+    { source: '泸州', target: '湛江'
+    },
+    { source: '海口', target: '太仓'
+    },
+    { source: '新港', target: '双水小冈'
+    },
+    { source: '烟台', target: '海口'
+    },
+    { source: '日照', target: '顺乐'
+    },
+    { source: '丹东', target: '茂名水东'
+    },
+    { source: '锦州', target: '武林'
+    },
+    { source: '莱州', target: '云浮'
+    },
+    { source: '安吉', target: '黄埔旧港'
+    },
+    { source: '泰州', target: '武林'
+    },
+    { source: '营口', target: '昆明'
+    },
+    { source: '秦皇岛', target: '四会永泰'
+    },
+    { source: '威海', target: '宁德'
+    },
+    { source: '泰州', target: '阳江'
+    },
+    { source: '黄骅', target: '勒流'
+    },
+    { source: '新港', target: '德清'
+    },
+    { source: '清远清新', target: '锦州'
+    },
+    { source: '秦皇岛', target: '双水小冈'
+    },
+    { source: '秦皇岛', target: '合肥'
+    },
+    { source: '锦州', target: '汕头'
+    },
+    { source: '丹东', target: '长沙'
+    },
+    { source: '安庆', target: '贵港'
+    },
+    { source: '莱州', target: '肇庆（三榕）'
+    },
+    { source: '南通', target: '深圳（大铲湾）'
+    },
+    { source: '泉州', target: '南庄'
+    },
+    { source: '莱州', target: '新会新港'
+    },
+    { source: '烟台', target: '虎门'
+    },
+    { source: '扬州', target: '小铲滩'
+    },
+    { source: '武汉', target: '虎门'
+    },
+    { source: '徐州', target: '小铲滩'
+    },
+    { source: '如皋', target: '小铲滩'
+    },
+    { source: '唐山', target: '湛江'
+    },
+    { source: '上海', target: '福清'
+    },
+    { source: '营口', target: '宁德'
+    },
+    { source: '宁波', target: '湛江'
+    },
+    { source: '南京', target: '北海'
+    },
+    { source: '广利港', target: '梧州（李家庄）'
+    },
+    { source: '日照', target: '海口'
+    },
+    { source: '新港', target: '芜湖'
+    },
+    { source: '盘锦', target: '漳州'
+    },
+    { source: '武汉', target: '福清'
+    },
+    { source: '营口', target: '鹏成'
+    },
+    { source: '上海', target: '深圳（大铲湾）'
+    },
+    { source: '莱州', target: '高明'
+    },
+    { source: '莱州', target: '四会'
+    },
+    { source: '武汉', target: '肇庆（三榕）'
+    },
+    { source: '青岛', target: '荆州'
+    },
+    { source: '新港', target: '新会新港'
+    },
+    { source: '莱州', target: '三埠'
+    },
+    { source: '日照', target: '武汉'
+    },
+    { source: '龙口', target: '顺乐'
+    },
+    { source: '贵港', target: '海口'
+    },
+    { source: '宁波', target: '海口'
+    },
+    { source: '南京', target: '钦州'
+    },
+    { source: '青岛', target: '湛江海安'
+    },
+    { source: '莱州', target: '小塘'
+    },
+    { source: '蚌埠', target: '黄埔旧港'
+    },
+    { source: '合肥', target: '汕头'
+    },
+    { source: '海口', target: '长兴'
+    },
+    { source: '新港', target: '马鞍山'
+    },
+    { source: '潍坊', target: '湛江'
+    },
+    { source: '烟台', target: '三埠'
+    },
+    { source: '武汉', target: '惠州'
+    },
+    { source: '武林', target: '外沙'
+    },
+    { source: '广利港', target: '珠海（高栏）'
+    },
+    { source: '锦州', target: '长兴'
+    },
+    { source: '莱州', target: '珠海（高栏）'
+    },
+    { source: '乍浦', target: '防城'
+    },
+    { source: '三水', target: '青岛'
+    },
+    { source: '上海', target: '小铲滩'
+    },
+    { source: '丹东', target: '岳阳'
+    },
+    { source: '黄骅', target: '九江（顺德）'
+    },
+    { source: '日照', target: '珠海（高栏）'
+    },
+    { source: '合肥', target: '阳江'
+    },
+    { source: '扬州', target: '虎门'
+    },
+    { source: '新港', target: '绍兴'
+    },
+    { source: '营口', target: '南通'
+    },
+    { source: '嘉兴', target: '烟台'
+    },
+    { source: '丹东', target: '四会永泰'
+    },
+    { source: '连云港', target: '钦州'
+    },
+    { source: '龙口', target: '鸦岗'
+    },
+    { source: '龙口', target: '新会新港'
+    },
+    { source: '烟台', target: '新沙'
+    },
+    { source: '盘锦', target: '花都（炭步）'
+    },
+    { source: '万州', target: '营口'
+    },
+    { source: '南京', target: '惠州'
+    },
+    { source: '营口', target: '黄石'
+    },
+    { source: '莱州', target: '四会永泰'
+    },
+    { source: '锦州', target: '黄埔旧港'
+    },
+    { source: '营口', target: '勒流'
+    },
+    { source: '盘锦', target: '小塘'
+    },
+    { source: '淮安', target: '梧州（李家庄）'
+    },
+    { source: '大连', target: '高明'
+    },
+    { source: '营口', target: '蚌埠'
+    },
+    { source: '小榄', target: '大连'
+    },
+    { source: '营口', target: '塘源'
+    },
+    { source: '厦门', target: '顺德新港'
+    },
+    { source: '烟台', target: '紫金村'
+    },
+    { source: '盘锦', target: '博罗'
+    },
+    { source: '贵港', target: '宁波'
+    },
+    { source: '漳州', target: '博罗'
+    },
+    { source: '厦门', target: '勒流'
+    },
+    { source: '泰州', target: '茂名水东'
+    },
+    { source: '青岛', target: '赤水'
+    },
+    { source: '大连', target: '南沙'
+    },
+    { source: '连云港', target: '北海'
+    },
+    { source: '大连', target: '双水小冈'
+    },
+    { source: '泉州', target: '鸦岗'
+    },
+    { source: '烟台', target: '高明'
+    },
+    { source: '合肥', target: '梧州（李家庄）'
+    },
+    { source: '铁山', target: '南昌'
+    },
+    { source: '黄骅', target: '深圳（大铲湾）'
+    },
+    { source: '宜兴', target: '小塘西'
+    },
+    { source: '张家港', target: '铁山'
+    },
+    { source: '潍坊', target: '梧州（李家庄）'
+    },
+    { source: '南京', target: '贵港'
+    },
+    { source: '宜宾', target: '九江（江西）'
+    },
+    { source: '营口', target: '德清'
+    },
+    { source: '潍坊', target: '新会新港'
+    },
+    { source: '重庆', target: '新港'
+    },
+    { source: '潍坊', target: '赤水'
+    },
+    { source: '烟台', target: '南庄'
+    },
+    { source: '烟台', target: '黄埔旧港'
+    },
+    { source: '涪陵', target: '青岛'
+    },
+    { source: '连云港', target: '三埠'
+    },
+    { source: '营口', target: '长沙'
+    },
+    { source: '云浮', target: '三亚'
+    },
+    { source: '长兴', target: '马尾'
+    },
+    { source: '潍坊', target: '珠海（高栏）'
+    },
+    { source: '潍坊', target: '肇庆（三榕）'
+    },
+    { source: '长兴', target: '小铲滩'
+    },
+    { source: '蚌埠', target: '贵港'
+    },
+    { source: '龙口', target: '深圳（大铲湾）'
+    },
+    { source: '潍坊', target: '三水'
+    },
+    { source: '小铲滩', target: '黄骅'
+    },
+    { source: '虎门', target: '洋浦港'
+    },
+    { source: '新港', target: '李锦记'
+    },
+    { source: '新港', target: '东莞海腾'
+    },
+    { source: '湛江海安', target: '宜昌'
+    },
+    { source: '北海', target: '泉州'
+    },
+    { source: '烟台', target: '珠海（高栏）'
+    },
+    { source: '秦皇岛', target: '温州'
+    },
+    { source: '日照', target: '湛江海安'
+    },
+    { source: '龙通', target: '海口'
+    },
+    { source: '营口', target: '广浚东江口'
+    },
+    { source: '寿光', target: '汕头'
+    },
+    { source: '江阴', target: '珠海（高栏）'
+    },
+    { source: '武汉', target: '汕头'
+    },
+    { source: '烟台', target: '台山'
+    },
+    { source: '鹏成', target: '锦州'
+    },
+    { source: '泉州', target: '重庆'
+    },
+    { source: '新港', target: '顺德新港'
+    },
+    { source: '潍坊', target: '中山'
+    },
+    { source: '连云港', target: '小铲滩'
+    },
+    { source: '乍浦', target: '新沙'
+    },
+    { source: '宿迁', target: '肇庆（三榕）'
+    },
+    { source: '芜湖', target: '锦州'
+    },
+    { source: '福鼎', target: '营口'
+    },
+    { source: '泸州', target: '青岛'
+    },
+    { source: '潍坊', target: '黄埔旧港'
+    },
+    { source: '芜湖', target: '中山'
+    },
+    { source: '盘锦', target: '武汉'
+    },
+    { source: '荆州', target: '虎门'
+    },
+    { source: '南通', target: '福鼎'
+    },
+    { source: '铜陵', target: '南沙'
+    },
+    { source: '黄骅', target: '龙通'
+    },
+    { source: '龙通', target: '新港'
+    },
+    { source: '锦州', target: '南昌'
+    },
+    { source: '徐州', target: '赤水'
+    },
+    { source: '荆州', target: '深圳（大铲湾）'
+    },
+    { source: '武汉', target: '小塘西'
+    },
+    { source: '烟台', target: '小塘'
+    },
+    { source: '锦州', target: '宁德'
+    },
+    { source: '锦州', target: '荆州'
+    },
+    { source: '宜昌', target: '深圳（大铲湾）'
+    },
+    { source: '荆州', target: '黄埔旧港'
+    },
+    { source: '锦州', target: '绍兴'
+    },
+    { source: '新港', target: '昆明'
+    },
+    { source: '宜昌', target: '虎门'
+    },
+    { source: '徐州', target: '贵港'
+    },
+    { source: '重庆', target: '连云港'
+    },
+    { source: '泸州', target: '连云港'
+    },
+    { source: '乐平', target: '烟台'
+    },
+    { source: '烟台', target: '博罗'
+    },
+    { source: '茂名水东', target: '营口'
+    },
+    { source: '日照', target: '南鲲'
+    },
+    { source: '丹东', target: '肇庆（三榕）'
+    },
+    { source: '蚌埠', target: '汕头'
+    },
+    { source: '丹东', target: '小铲滩'
+    },
+    { source: '日照', target: '九江（顺德）'
+    },
+    { source: '连云港', target: '东莞海腾'
+    },
+    { source: '广利港', target: '小铲滩'
+    },
+    { source: '唐山', target: '长兴'
+    },
+    { source: '营口', target: '日照'
+    },
+    { source: '日照', target: '李锦记'
+    },
+    { source: '丹东', target: '汕头'
+    },
+    { source: '盘锦', target: '九江（江西）'
+    },
+    { source: '大连', target: '新会新港'
+    },
+    { source: '青岛', target: '鹤山'
+    },
+    { source: '武汉', target: '深圳（大铲湾）'
+    },
+    { source: '张家港', target: '大连'
+    },
+    { source: '常德', target: '三埠'
+    },
+    { source: '常德', target: '鹤山'
+    },
+    { source: '茂名水东', target: '温州'
+    },
+    { source: '常德', target: '小榄'
+    },
+    { source: '宁波', target: '营口'
+    },
+    { source: '池州', target: '南庄'
+    },
+    { source: '镇江', target: '肇庆（三榕）'
+    },
+    { source: '三埠', target: '万州'
+    },
+    { source: '岳阳', target: '福清'
+    },
+    { source: '潍坊', target: '海口'
+    },
+    { source: '连云港', target: '南鲲'
+    },
+    { source: '潍坊', target: '双水小冈'
+    },
+    { source: '新港', target: '鸦岗'
+    },
+    { source: '莱州', target: '南沙'
+    },
+    { source: '芜湖', target: '新会新港'
+    },
+    { source: '盘锦', target: '荆州'
+    },
+    { source: '日照', target: '勒流'
+    },
+    { source: '重庆', target: '小铲滩'
+    },
+    { source: '秦皇岛', target: '绍兴'
+    },
+    { source: '宜兴', target: '营口'
+    },
+    { source: '潍坊', target: '德庆'
+    },
+    { source: '黄骅', target: '嘉兴'
+    },
+    { source: '寿光', target: '洋浦港'
+    },
+    { source: '秦皇岛', target: '嘉兴'
+    },
+    { source: '日照', target: '顺德新港'
+    },
+    { source: '锦州', target: '茂名水东'
+    },
+    { source: '南昌', target: '海口'
+    },
+    { source: '营口', target: '惠州'
+    },
+    { source: '南京', target: '云浮'
+    },
+    { source: '寿光', target: '上海'
+    },
+    { source: '莱州', target: '乐平'
+    },
+    { source: '锦州', target: '铁山'
+    },
+    { source: '泉州', target: '丹东'
+    },
+    { source: '铜陵', target: '小铲滩'
+    },
+    { source: '黄石', target: '海口'
+    },
+    { source: '武汉', target: '顺德新港'
+    },
+    { source: '重庆', target: '安吉'
+    },
+    { source: '乍浦', target: '钦州'
+    },
+    { source: '南京', target: '汕头'
+    },
+    { source: '泰州', target: '湛江'
+    },
+    { source: '长兴', target: '厦门'
+    },
+    { source: '青岛', target: '黄埔旧港'
+    },
+    { source: '潍坊', target: '小榄'
+    },
+    { source: '虎门', target: '镇江'
+    },
+    { source: '广利港', target: '厦门'
+    },
+    { source: '大连', target: '花都巴江'
+    },
+    { source: '黄骅', target: '三埠'
+    },
+    { source: '武汉', target: '黄埔旧港'
+    },
+    { source: '盘锦', target: '小榄'
+    },
+    { source: '威海', target: '汕头'
+    },
+    { source: '南京', target: '小铲滩'
+    },
+    { source: '黄石', target: '南庄'
+    },
+    { source: '南昌', target: '深圳（大铲湾）'
+    },
+    { source: '上海', target: '虎门'
+    },
+    { source: '日照', target: '漳州'
+    },
+    { source: '小铲滩', target: '常州'
+    }
+]
