@@ -45,4 +45,8 @@ statistic_df = temp_df.groupby(["DIRECTION","SVVD","WBL_AUD_DT"])[['AMT',"VOLUME
 # Each direction, each SVVD, each day: avg freight rate and daily volume
 statistic_df["AMT"] = statistic_df["AMT"]/statistic_df["VOLUME"]
 print(statistic_df)
-statistic_df.to_csv("./钦州_宁波.csv", index=False)
+# plt.scatter(statistic_df["VOLUME"], statistic_df["AMT"],marker="^")
+# plt.xlabel("Daily Volume")
+# plt.ylabel("Daily Avg AMT")
+# plt.show()
+# statistic_df.to_csv("./钦州_宁波.csv", index=False)
