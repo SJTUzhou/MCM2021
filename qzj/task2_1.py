@@ -8,7 +8,7 @@ tmp_2 = pd.DataFrame()
 for seletion in top10_seletion:
 
     df1 = df.loc[df[12] == seletion]
-    figurename = 'qzj/habbits/' + seletion+'4.png'
+    figurename = 'qzj/habbits/' + seletion+'5.png'
 
     SVVD_list = pd.unique(df1[4])
     svvd_num = len(SVVD_list)
@@ -129,7 +129,8 @@ for seletion in top10_seletion:
         '''    
         
         df2['SVVD'] = svvd
-        tmp_1 = pd.concat([tmp_1, df2])
+        #tmp_1 = pd.concat([tmp_1, df2])
+        tmp_1 = df2
         '''
         if count == 1:
             tmp_1 = df2
