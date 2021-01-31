@@ -9,10 +9,10 @@
 	min-width: 320px;
 	max-width: 800px;
 	margin: 0 auto;
-}</style>	<script src="https://code.highcharts.com/highcharts.js"></script>
-	<script src="https://code.highcharts.com/modules/exporting.js"></script>
-	<script src="https://code.highcharts.com/modules/oldie.js"></script>
-	<script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+}</style>	<script src="highcharts.js"></script>
+	<script src="exporting.js"></script>
+	<script src="oldie.js"></script>
+	<script src="networkgraph.js"></script>
 </head>
 <body>
 <!--
@@ -34,12 +34,14 @@ Highcharts.addEvent(
 			i = 0,
 			nodes = {};
 		e.options.data.forEach(function (link) {
-			if (link[0] === 'Proto Indo-European') {
-				nodes['Proto Indo-European'] = {
-					id: 'Proto Indo-European',
+			if (link[0] == '营口') {
+				
+				nodes[link[0]] = {
+					id: link[0],
 					marker: {
 						radius: 20
-					}
+					},
+					color: colors[i++]
 				};
 				nodes[link[1]] = {
 					id: link[1],
@@ -48,9 +50,11 @@ Highcharts.addEvent(
 					},
 					color: colors[i++]
 				};
-			} else if (nodes[link[0]] && nodes[link[0]].color) {
-				nodes[link[1]] = {
-					id: link[1],
+			}
+			else if (nodes[link[0]]) {
+				nodes[link[0]] = {
+					id: link[0],
+					marker:{radius:15},
 					color: nodes[link[0]].color
 				};
 			}
@@ -66,10 +70,10 @@ Highcharts.chart('container', {
 		height: '100%'
 	},
 	title: {
-		text: 'The Indo-European Laungauge Tree'
+		text: 'title'
 	},
 	subtitle: {
-		text: 'A Force-Directed Network Graph in Highcharts'
+		text: 'subtitle'
 	},
 	plotOptions: {
 		networkgraph: {
@@ -83,9 +87,7 @@ Highcharts.chart('container', {
 		dataLabels: {
 			enabled: true
 		},
-		data: [
-		['新港','南沙'], ['营口','南沙'], ['营口','宁波'], ['钦州','宁波'], ['营口','福清'], ['营口','钦州'], ['上海','烟台'], ['日照','铁山'], ['上海','武汉'], ['乐从','营口'],
-		]
+		data: [["新港","南沙"],["营口","南沙"],["营口","宁波"],["钦州","宁波"],["营口","福清"],["营口","钦州"],["上海","烟台"],["日照","铁山"],["上海","武汉"],["乐从","营口"],["营口","泸州"],["秦皇岛","重庆"],["大连","黄石"],["新港","鱼珠"],["营口","深圳（大铲湾）"],["营口","上海"],["营口","汕头"],["宜宾","马尾"],["营口","海口"],["营口","新沙"],["常德","北海"],["钦州","日照"],["新港","深圳（大铲湾）"],["宜宾","福清"],["董家口","阳江"],["万州","湛江"],["寿光","海口"],["石岛","钦州"],["重庆","新会新港"],["新港","汕头"],["连云港","阳江"],["涪陵","南沙"],["大连","海口"],["寿光","湛江"],["石岛","深圳（大铲湾）"],["烟台","惠州"],["新港","重庆"],["石岛","珠海（高栏）"],["合肥","海口"],["锦州","宜宾"],["大连","小塘西"],["江阴","宁德"],["重庆","深圳（大铲湾）"],["新港","黄埔旧港"],["涪陵","虎门"],["日照","深圳（大铲湾）"],["龙口","梧州（李家庄）"],["丹东","泸州"],["营口","泉州"],["惠州","长沙"],["寿光","鱼珠"],["肇庆（三榕）","荆州"],["乐平","荆州"],["广利港","白坭"],["威海","珠海（高栏）"],["大连","肇庆（新港）"],["广利港","鸦岗"],["营口","德庆"],["潍坊","庙沙围"],["寿光","深圳（大铲湾）"],["广利港","虎门"],["龙口","鹏成"],["寿光","新会新港"],["广利港","新会新港"],["寿光","石龙"],["宜宾","泉州"],["荆州","马尾"],["莱州","虎门"],["广利港","南沙"],["龙口","三埠"],["扬州","贵港"],["龙口","珠海洪湾"],["连云港","高明"],["营口","漳州"],["烟台","双水小冈"],["青岛","新沙"],["鸦岗","营口"],["营口","马尾"],["荆州","小榄"],["马鞍山","马尾"],["镇江","钦州"],["江阴","铁山"],["石岛","湛江"],["北海","蚌埠"],["秦皇岛","北海"],["黄骅","海安"],["青岛","东莞海腾"],["日照","鹤山"],["威海","钦州"],["南沙","营口"],["丹东","新会新港"],["合肥","小铲滩"],["青岛","三埠"],["上海","营口"],["新港","镇江"],["九江（江西）","中山"],["汕头","营口"],["烟台","南沙"],["扬州","惠州"],["秦皇岛","神湾"]]
 	}]
 });
 </script>

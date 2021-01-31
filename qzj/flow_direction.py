@@ -22,12 +22,12 @@ df1 = df['BEGIN']
 df2 = df['END']
 
 flow_relation = pd.concat([df1,df2],axis=1)
-#flow_relation.to_json('qzj/flow_relation.json', orient="values",force_ascii=False)
+flow_relation[0:100].to_json('qzj/flow_relation.json', orient="values",force_ascii=False)
 
 a = flow_relation[0:1000].to_dict('records')
-f = open("qzj/d3-Sticky-Force-Layout-master/1.js", "w")
-f.write(str(a))
-f.close()
+#f = open("qzj/d3-Sticky-Force-Layout-master/1.js", "w")
+#f.write(str(a))
+#f.close()
 
 #df[5] = pd.to_numeric(df[5])
 #flow_weight = df.groupby([[9,10,5]]).sum()
