@@ -22,6 +22,7 @@ stem(lags_bb,bb);
 title("daily freight rate");
 %%
 data = readmatrix("./钦州_宁波.csv");
+% data = readmatrix("./营口_南沙.csv");
 amt = data(:,4);
 volume = data(:,5);
 log_amt = log10(amt);
