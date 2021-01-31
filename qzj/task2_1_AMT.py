@@ -2,13 +2,14 @@ import pandas as pd
 
 df = pd.read_csv('zjy/task2_1.csv', header = None)
 
-top10_seletion = ['新港_南沙', '营口_南沙', '营口_宁波', '钦州_宁波', '营口_福清', '营口_钦州', '上海_烟台', '日照_铁山', '上海_武汉', '乐从_营口']
+#top10_seletion = ['新港_南沙', '营口_南沙', '营口_宁波', '钦州_宁波', '营口_福清', '营口_钦州', '上海_烟台', '日照_铁山', '上海_武汉', '乐从_营口']
+top10_seletion = ['钦州_宁波']
 tmp_2 = pd.DataFrame()
 
 for seletion in top10_seletion:
 
     df1 = df.loc[df[12] == seletion]
-    figurename = 'qzj/mean_AMT/' + seletion+'3.png'
+    figurename = 'qzj/mean_AMT/' + seletion+'5.png'
 
     SVVD_list = pd.unique(df1[4])
     svvd_num = len(SVVD_list)
@@ -154,16 +155,21 @@ for seletion in top10_seletion:
         '''
 
         df2['SVVD'] = svvd
-        tmp_1 = pd.concat([tmp_1, df2])
+        #tmp_1 = pd.concat([tmp_1, df2])
+        tmp_1 = df2
+
     tmp_1['FLOW'] = seletion
     tmp_2 = pd.concat([tmp_2,tmp_1])
-    ax = tmp_1.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
-    ax.set_ylabel('Average Freight Rate')
-    ax.set_xlabel('Days Before Sailing')
-    fig = ax.get_figure()
-    fig.savefig(figurename)
+    try:
+        ax = tmp_1.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
+        ax.set_ylabel('Average Freight Rate')
+        ax.set_xlabel('Days Before Sailing')
+        fig = ax.get_figure()
+        fig.savefig(figurename)
+    except:
+        print('last')
 
-tmp_2.to_csv('qzj/mean_AMT/final.csv')
+tmp_2.to_csv('qzj/mean_AMT/final5.csv')
 
         
         
