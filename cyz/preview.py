@@ -48,22 +48,28 @@ dailyVol_df['VOLUME'] = dailyVol_df['VOLUME']/num_SVVD
 print(dailyVol_df["VOLUME"].sum())
 
 
-svvd_dfs = []
-all_svvd_df = pd.DataFrame(columns=statistic_df.columns)
-for svvd in pd.unique(statistic_df["SVVD"]):
-    part_df = statistic_df.loc[statistic_df["SVVD"]==svvd]
-    svvd_dfs.append(part_df)
-    all_svvd_df = all_svvd_df.append(part_df)
-
-print(svvd_dfs[0:3])
-fig, axs = plt.subplots(1, len(svvd_dfs))
-for i in range(len(svvd_dfs)):
-    axs[i].scatter(svvd_dfs[i]["WBL_AUD_DT"], svvd_dfs[i]["VOLUME"], marker="o", s=8)
-    axs[i].scatter(dailyVol_df["WBL_AUD_DT"], dailyVol_df["VOLUME"], marker="^", s=8)
-    axs[i].set_ylabel("Daily Volume")
-    axs[i].set_xlabel("Date")
+plt.scatter(dailyVol_df["WBL_AUD_DT"], dailyVol_df["VOLUME"], marker="^", s=8)
+plt.ylabel("Daily Sales Volume")
+plt.xlabel("Date")
 plt.show()
 
 
-all_svvd_df.rename(columns={'WBL_AUD_DT':'BEFORE_DAYS'}, inplace=True)
-all_svvd_df.to_csv("./task2_3_{}.csv".format(myDirTsk2_3), index=False)
+# svvd_dfs = []
+# all_svvd_df = pd.DataFrame(columns=statistic_df.columns)
+# for svvd in pd.unique(statistic_df["SVVD"]):
+#     part_df = statistic_df.loc[statistic_df["SVVD"]==svvd]
+#     svvd_dfs.append(part_df)
+#     all_svvd_df = all_svvd_df.append(part_df)
+
+# print(svvd_dfs[0:3])
+# fig, axs = plt.subplots(1, len(svvd_dfs))
+# for i in range(len(svvd_dfs)):
+#     axs[i].scatter(svvd_dfs[i]["WBL_AUD_DT"], svvd_dfs[i]["VOLUME"], marker="o", s=8)
+#     axs[i].scatter(dailyVol_df["WBL_AUD_DT"], dailyVol_df["VOLUME"], marker="^", s=8)
+#     axs[i].set_ylabel("Daily Volume")
+#     axs[i].set_xlabel("Date")
+# plt.show()
+
+
+# all_svvd_df.rename(columns={'WBL_AUD_DT':'BEFORE_DAYS'}, inplace=True)
+# all_svvd_df.to_csv("./task2_3_{}.csv".format(myDirTsk2_3), index=False)

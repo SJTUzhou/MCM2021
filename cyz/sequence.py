@@ -38,23 +38,28 @@ for dir_df in dir_dfs:
 print(df_DIR_SVVD_DATE_AMT_lst[0])
 '''
 # 是否考虑集装箱体积
-df2["VOLUME"] = 1
-# df2["VOLUME"] = df2["CNTR_TYPE"]
+df2["CNT"] = 1
+df2["VOLUME"] = df2["CNTR_TYPE"] # 或等于1意味着不考虑单位容积
 
-myDirTsk3_1 = '乐从_营口' #'营口_钦州'#'营口_南沙'#'新港_南沙' #'钦州_宁波'
+myDirTsk3_1 = '营口_南沙'#'上海_烟台'# 
 temp_df = df2.loc[(df2["DIRECTION"]==myDirTsk3_1) & (df2["IS_EMPTY"]==0)]
-temp_df = temp_df[["SVVD","WBL_AUD_DT","AMT","VOLUME","DIRECTION"]]
+temp_df = temp_df[["SVVD","WBL_AUD_DT","AMT","VOLUME","DIRECTION","CNT"]]
 
 # 计算每日平均发货量和每日平均运费
-statistic_df = temp_df.groupby(["DIRECTION","SVVD","WBL_AUD_DT"])[['AMT',"VOLUME"]].sum().reset_index()
+statistic_df = temp_df.groupby(["DIRECTION","SVVD","WBL_AUD_DT"])[['AMT',"VOLUME","CNT"]].sum().reset_index()
+
 # Each direction, each SVVD, each day: avg freight rate and daily volume
-statistic_df["AMT"] = statistic_df["AMT"]/statistic_df["VOLUME"]
+statistic_df["AMT"] = statistic_df["AMT"]/statistic_df["VOLUME"] # statistic_df["CNT"]
 # print(statistic_df)
-# plt.scatter(statistic_df["VOLUME"], statistic_df["AMT"],marker="^")
-# plt.xlabel("Daily Volume")
-# plt.ylabel("Daily Avg AMT")
-# plt.show()
+plt.scatter(statistic_df["AMT"],statistic_df["VOLUME"], marker="^")
+plt.ylabel("Daily sales volume per voyage")
+plt.xlabel("Average freight rate per unit of volume")
+plt.show()
 # statistic_df.to_csv("./{}.csv".format(myDirTsk3_1), index=False)
+
+
+
+'''
 num_SVVD = pd.unique(statistic_df["SVVD"]).shape[0]
 avgSVVD_Vol = statistic_df["VOLUME"].sum()/num_SVVD
 print("the avg volume per SVVD of this direction {}".format(avgSVVD_Vol))
@@ -73,3 +78,4 @@ plt.scatter(dailyVol_df["WBL_AUD_DT"], dailyVol_df["VOLUME"], marker="^")
 plt.ylabel("Daily Volume")
 plt.xlabel("Date")
 plt.show()
+'''
