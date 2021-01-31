@@ -22,7 +22,7 @@ df2["CNTR_TYPE"] = df2["CNTR_TYPE"].apply(lambda x: int(x[:2]))
 df2["VOLUME"] = 1
 # df2["VOLUME"] = df2["CNTR_TYPE"]
 
-myDirTsk2_3 = '钦州_宁波' #'乐从_营口' #'营口_钦州'#'营口_南沙'#'新港_南沙' #'钦州_宁波'
+myDirTsk2_3 = "营口_宁波"#'上海_烟台' 
 temp_df = df2.loc[(df2["DIRECTION"]==myDirTsk2_3) & (df2["IS_EMPTY"]==0)]
 temp_df = temp_df[["SVVD","WBL_AUD_DT","AMT","VOLUME"]]
 
@@ -49,8 +49,11 @@ print(dailyVol_df["VOLUME"].sum())
 
 
 svvd_dfs = []
+all_svvd_df = pd.DataFrame(columns=statistic_df.columns)
 for svvd in pd.unique(statistic_df["SVVD"]):
-    svvd_dfs.append(statistic_df.loc[statistic_df["SVVD"]==svvd])
+    part_df = statistic_df.loc[statistic_df["SVVD"]==svvd]
+    svvd_dfs.append(part_df)
+    all_svvd_df = all_svvd_df.append(part_df)
 
 print(svvd_dfs[0:3])
 fig, axs = plt.subplots(1, len(svvd_dfs))
@@ -61,4 +64,6 @@ for i in range(len(svvd_dfs)):
     axs[i].set_xlabel("Date")
 plt.show()
 
-# statistic_df.to_csv("./{}.csv".format(myDirTsk2_3), index=False)
+
+all_svvd_df.rename(columns={'WBL_AUD_DT':'BEFORE_DAYS'}, inplace=True)
+all_svvd_df.to_csv("./task2_3_{}.csv".format(myDirTsk2_3), index=False)
