@@ -41,9 +41,10 @@ print(df_DIR_SVVD_DATE_AMT_lst[0])
 df2["CNT"] = 1
 df2["VOLUME"] = df2["CNTR_TYPE"] # 或等于1意味着不考虑单位容积
 
-myDirTsk3_1 = '营口_南沙'#'上海_烟台'# 
+myDirTsk3_1 = '钦州_宁波'#'营口_宁波'# 
 temp_df = df2.loc[(df2["DIRECTION"]==myDirTsk3_1) & (df2["IS_EMPTY"]==0)]
 temp_df = temp_df[["SVVD","WBL_AUD_DT","AMT","VOLUME","DIRECTION","CNT"]]
+print(temp_df)
 
 # 计算每日平均发货量和每日平均运费
 statistic_df = temp_df.groupby(["DIRECTION","SVVD","WBL_AUD_DT"])[['AMT',"VOLUME","CNT"]].sum().reset_index()
@@ -52,7 +53,7 @@ statistic_df = temp_df.groupby(["DIRECTION","SVVD","WBL_AUD_DT"])[['AMT',"VOLUME
 statistic_df["AMT"] = statistic_df["AMT"]/statistic_df["VOLUME"] # statistic_df["CNT"]
 # print(statistic_df)
 plt.scatter(statistic_df["AMT"],statistic_df["VOLUME"], marker="^")
-plt.ylabel("Daily sales volume per voyage")
+plt.ylabel("Daily sales volume")
 plt.xlabel("Average freight rate per unit of volume")
 plt.show()
 # statistic_df.to_csv("./{}.csv".format(myDirTsk3_1), index=False)
