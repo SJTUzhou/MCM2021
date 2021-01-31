@@ -129,17 +129,21 @@ for seletion in top10_seletion:
         '''    
         
         df2['SVVD'] = svvd
-        #tmp_1 = pd.concat([tmp_1, df2])
+        tmp_1 = pd.concat([tmp_1, df2])
+        '''
         if count == 1:
             tmp_1 = df2
             count = count + 1
         else:
             tmp_1.columns=['before_days','average_count', 'SVVD']
             tmp_1 = tmp_1 + df2
+        '''
         
     tmp_1['FLOW'] = seletion
     tmp_2 = pd.concat([tmp_2,tmp_1])
+    
     try:
+        tmp_1 = tmp_1.groupby('before_days').sum().reset_index()
         ax = tmp_1.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
         ax.set_ylabel('Average Container Quantity')
         ax.set_xlabel('Days Before Sailing')
@@ -149,7 +153,7 @@ for seletion in top10_seletion:
         print('last_one')
     
 
-tmp_2.to_csv('qzj/habbits/final4.csv')
+tmp_2.to_csv('qzj/habbits/final5.csv')
 
 
         
