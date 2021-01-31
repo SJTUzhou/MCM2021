@@ -9,7 +9,7 @@ tmp_2 = pd.DataFrame()
 for seletion in top10_seletion:
 
     df1 = df.loc[df[12] == seletion]
-    figurename = 'qzj/mean_AMT/' + seletion+'5.png'
+    figurename = 'qzj/mean_AMT/' + seletion+'6.png'
 
     SVVD_list = pd.unique(df1[4])
     svvd_num = len(SVVD_list)
@@ -25,30 +25,41 @@ for seletion in top10_seletion:
         same_svvd = df1.loc[df1[4] == svvd]
         #ave_AMT = same_svvd[5].astype(float).mean()
         num = len(same_svvd)
-        same_time_svvd = pd.to_datetime(same_svvd[1])
+        #try:
+        ttt = same_svvd[1].str[0:10]
+        same_time_svvd = pd.to_datetime(ttt.str.strip(), format = '%Y/%m/%d')
+        #except:
+            #same_svvd[11].split
+            #same_time_svvd = pd.to_datetime(same_svvd[11], format = '%m%d ')
+            #print(1)
+        
+
         time_list = pd.unique(same_time_svvd)
         time_counts = same_time_svvd.value_counts(sort=False)
         time_counts = time_counts.sort_index()
         
-        time_list_str = pd.unique(same_svvd[1])
-        AMT_list = []
-        for t in time_list_str:
-            AMT_df = same_svvd.loc[same_svvd[1] == t]
-            AMT_list.append(AMT_df[5].astype(float).mean())
-            #print(2)
-
-        time_counts = pd.Series(AMT_list).value_counts(sort=False).reset_index()
         # 提前了几天
         time_before = time_list[-1] - time_list
         time_before_days = time_before.astype('timedelta64[D]').astype(int)
+
+        time_list_str = pd.unique(same_svvd[11])
+        AMT_list = []
+        for t in time_list_str:
+            AMT_df = same_svvd.loc[same_svvd[11] == t]
+            AMT_list.append(AMT_df[5].astype(float).mean())
+            #print(2)
+
+        #time_counts = pd.Series(AMT_list).value_counts(sort=False).reset_index()
+        #time_counts['result'] = time_counts['index'].mul(time_counts[0])
         
-        svvd_info_large = pd.concat([pd.DataFrame(time_counts['index']),pd.DataFrame(time_before_days)], axis=1)
-        svvd_info_large.rename({'index':'date', 1: 'count', 0:'before'}, axis=1, inplace=True)
+        svvd_info_large = pd.concat([pd.DataFrame(AMT_list),pd.DataFrame(time_before_days)], axis=1)
+        svvd_info_large.columns=['ave_AMT', 'before']
+        #svvd_info_large.rename({'result':'date', 1: 'count', 0:'before'}, axis=1, inplace=True)
         before_list = pd.unique(svvd_info_large['before'])
         sum_s_list=[]
         for i in before_list:
             s = svvd_info_large.loc[svvd_info_large['before'] == i]
-            sum_s = s['date'].sum()
+            sum_s = s['ave_AMT'].mean()
             sum_s_list.append(sum_s)
             #tmp = pd.DataFrame({'count': [sum_s], 'before_days': [i])
         svvd_info_large = pd.DataFrame({'count': sum_s_list, 'before_days': before_list})
@@ -57,8 +68,9 @@ for seletion in top10_seletion:
         svvd_info_large['SVVD'] = svvd
         #svvd_info_large.set_index('before_days')
         tmp_large = pd.concat([tmp_large, svvd_info_large])
-        large_count = tmp_large.groupby(by='before_days')['count'].sum()/svvd_num
+        large_count = tmp_large.groupby(by='before_days')['count'].sum()/(svvd_num)
         df2 = pd.DataFrame({'before_days':large_count.index, 'average_count': large_count.values})
+        #print(df2)
         df2['num'] = 'large'
         #filename = 'qzj/habbits/' + seletion+'_large.csv'
         '''
@@ -169,7 +181,7 @@ for seletion in top10_seletion:
     except:
         print('last')
 
-tmp_2.to_csv('qzj/mean_AMT/final5.csv')
+tmp_2.to_csv('qzj/mean_AMT/finalmean.csv')
 
         
         
