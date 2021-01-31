@@ -146,7 +146,7 @@ for seletion in top10_seletion:
         fig = ax.get_figure()
         fig.savefig(figurename)
     except:
-        print(last_one)
+        print('last_one')
     
 
 tmp_2.to_csv('qzj/habbits/final3.csv')
