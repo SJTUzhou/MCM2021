@@ -8,7 +8,7 @@ tmp_2 = pd.DataFrame()
 for seletion in top10_seletion:
 
     df1 = df.loc[df[12] == seletion]
-    figurename = 'qzj/habbits/' + seletion+'3.png'
+    figurename = 'qzj/habbits/' + seletion+'4.png'
 
     SVVD_list = pd.unique(df1[4])
     svvd_num = len(SVVD_list)
@@ -149,7 +149,7 @@ for seletion in top10_seletion:
         print('last_one')
     
 
-tmp_2.to_csv('qzj/habbits/final3.csv')
+tmp_2.to_csv('qzj/habbits/final4.csv')
 
 
         
