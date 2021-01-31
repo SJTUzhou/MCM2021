@@ -4,9 +4,11 @@ df = pd.read_csv('zjy/task2_1.csv', header = None)
 
 top10_seletion = ['新港_南沙', '营口_南沙', '营口_宁波', '钦州_宁波', '营口_福清', '营口_钦州', '上海_烟台', '日照_铁山', '上海_武汉', '乐从_营口']
 tmp_2 = pd.DataFrame()
+
 for seletion in top10_seletion:
 
     df1 = df.loc[df[12] == seletion]
+    figurename = 'qzj/mean_AMT/' + seletion+'3.png'
 
     SVVD_list = pd.unique(df1[4])
     svvd_num = len(SVVD_list)
@@ -58,12 +60,13 @@ for seletion in top10_seletion:
         df2 = pd.DataFrame({'before_days':large_count.index, 'average_count': large_count.values})
         df2['num'] = 'large'
         #filename = 'qzj/habbits/' + seletion+'_large.csv'
-        figurename = 'qzj/mean_AMT/' + seletion+'.png'
+        '''
         ax = df2.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
         ax.set_ylabel('Average Freight Rate')
         ax.set_xlabel('Days Before Sailing')
         fig = ax.get_figure()
         fig.savefig(figurename)
+        '''
         
         '''
         if num > 100:
@@ -154,6 +157,11 @@ for seletion in top10_seletion:
         tmp_1 = pd.concat([tmp_1, df2])
     tmp_1['FLOW'] = seletion
     tmp_2 = pd.concat([tmp_2,tmp_1])
+    ax = tmp_1.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
+    ax.set_ylabel('Average Freight Rate')
+    ax.set_xlabel('Days Before Sailing')
+    fig = ax.get_figure()
+    fig.savefig(figurename)
 
 tmp_2.to_csv('qzj/mean_AMT/final.csv')
 

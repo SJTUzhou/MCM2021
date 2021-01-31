@@ -8,6 +8,7 @@ tmp_2 = pd.DataFrame()
 for seletion in top10_seletion:
 
     df1 = df.loc[df[12] == seletion]
+    figurename = 'qzj/habbits/' + seletion+'3.png'
 
     SVVD_list = pd.unique(df1[4])
     svvd_num = len(SVVD_list)
@@ -18,6 +19,7 @@ for seletion in top10_seletion:
     svvd_info_small = pd.DataFrame()
     svvd_info_large = pd.DataFrame()
     tmp_1 = pd.DataFrame()
+    count = 1
 
     for svvd in SVVD_list:
         same_svvd = df1.loc[df1[4] == svvd]
@@ -47,15 +49,16 @@ for seletion in top10_seletion:
         tmp_large = pd.concat([tmp_large, svvd_info_large])
         large_count = tmp_large.groupby(by='before_days')['count'].sum()/svvd_num
         df2 = pd.DataFrame({'before_days':large_count.index, 'average_count': large_count.values})
-        df2['num'] = 'large'
+        #df2['num'] = 'large'
         #filename = 'qzj/habbits/' + seletion+'_large.csv'
-        figurename = 'qzj/habbits/' + seletion+'.png'
+        '''
         ax = df2.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
         ax.set_ylabel('Average Container Quantity')
         ax.set_xlabel('Days Before Sailing')
         fig = ax.get_figure()
         fig.savefig(figurename)
         #df2.to_csv(filename)
+        '''
 
         '''
         if num > 100:
@@ -126,11 +129,27 @@ for seletion in top10_seletion:
         '''    
         
         df2['SVVD'] = svvd
-        tmp_1 = pd.concat([tmp_1, df2])
+        #tmp_1 = pd.concat([tmp_1, df2])
+        if count == 1:
+            tmp_1 = df2
+            count = count + 1
+        else:
+            tmp_1.columns=['before_days','average_count', 'SVVD']
+            tmp_1 = tmp_1 + df2
+        
     tmp_1['FLOW'] = seletion
     tmp_2 = pd.concat([tmp_2,tmp_1])
+    try:
+        ax = tmp_1.plot(x='before_days',y='average_count',color='DarkBlue',xlim=[0,14])
+        ax.set_ylabel('Average Container Quantity')
+        ax.set_xlabel('Days Before Sailing')
+        fig = ax.get_figure()
+        fig.savefig(figurename)
+    except:
+        print(last_one)
+    
 
-tmp_2.to_csv('qzj/habbits/final.csv')
+tmp_2.to_csv('qzj/habbits/final3.csv')
 
 
         
