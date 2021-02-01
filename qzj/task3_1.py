@@ -6,13 +6,30 @@ import numpy as np
 
 df = pd.read_csv('zjy/task2_1.csv')
 
-def calculate_daily_volume(freight_rate_per_volume):
+def calculate_daily_volume(freight_rate_per_volume, df, day_index, fulled):
     # parameter a, b are determined by function fitting of matlab
-    a = 1768
-    b = -0.1853
+    a = 88.4
+    b = -0.009267
     freight_rate_per_volume = np.array(freight_rate_per_volume)
     daily_volume = a * np.exp(b * freight_rate_per_volume)
-    return daily_volume
+    # daily_volume = daily_volume/40
+
+    if fulled:
+        daily_volume = 0
+    else:
+        old_sold_rate = df.loc[day_index,'sold_rate']
+        total_sold = df.loc[day_index,'sales_count_per_SVVD']
+        today_sold = df.loc[day_index,'sales_count_per_day']
+        pre_sold = old_sold_rate*total_sold-today_sold # 今天之前卖了多少
+        new_sold = pre_sold + daily_volume
+        left_sold = total_sold - pre_sold
+        if new_sold > left_sold:
+            daily_volume = left_sold
+            df.loc[day_index, 'sold_rate'] = 1
+            fulled = True
+            #print('直接满仓')
+    
+    return daily_volume, fulled
 
 # 左闭右开，输出当前区间的总income
 def cal_money(df, rate_list, start_day, end_day, rate_gate, discount):
@@ -24,6 +41,7 @@ def cal_money(df, rate_list, start_day, end_day, rate_gate, discount):
     old_AMT = 0
     count = 0
     unchanged = True
+    full = False
     for day in start_day_list:
         day_index = 14 - day
         
@@ -37,9 +55,15 @@ def cal_money(df, rate_list, start_day, end_day, rate_gate, discount):
                 sales = df.loc[day_index,'sales_count_per_day'] # 当日销量
                 today_per_price = today_price/sales # 单价
                 new_price = today_per_price + abs(today_per_price)*(discount-1) # 新单价，后面可以修改影响后的销量
-                new_sales = df.loc[day_index,'sales_count_per_day'] # 新销量
-                #new_sales = 40*calculate_daily_volume(new_price/40)
-                new_AMT_tmp = new_price*new_sales - today_price
+                #new_sales = df.loc[day_index,'sales_count_per_day'] # 新销量
+                #new_AMT_tmp = new_price*new_sales - today_price
+                
+                if full:
+                    new_AMT_tmp = 0
+                else:
+                    new_sales, full = calculate_daily_volume(new_price, df, day_index, full)
+                    new_AMT_tmp = new_price*new_sales - today_price
+                
                 new_AMT = new_AMT + new_AMT_tmp
                 print('in the day range')
                 
@@ -132,11 +156,11 @@ for svvd in SVVD_list:
     old_income_list.append(old_income)
     
     tmp = tmp.sort_values(by=['SVVD', 'WBL_AUD_DT'], ascending=[False, False])
-    print(2)
+    #print(2)
     
     
 income_change = pd.DataFrame({'SVVD': SVVD_list, 'new_income': new_income_list, 'old_income': old_income_list})
-income_change.to_csv('qzj/income_change_exsist_price_strategy.csv')
+income_change.to_csv('qzj/income_change_exsist_price_strategy_volume_change.csv')
 #tmp_2 = tmp.sort_values(by='SVVD', ascending=True)
 #tmp_2.to_csv('qzj/habbits/sales_counts_AMT.csv')
 #time_list_df = pd.unique(statistic_df.groupby(['SVVD'])[['WBL_AUD_DT']])
