@@ -66,7 +66,7 @@ df.dropna(axis=0, how='any', inplace=True)
 temp_df = df.loc[(df["DIRECTION"]=='钦州_宁波')]
 temp_df = temp_df[["SVVD","WBL_AUD_DT","AMT"]]
 statistic_df = temp_df.groupby(["SVVD","WBL_AUD_DT"])[['AMT']].sum().reset_index()
-print(1)
+# print(1)
 
 # 距离离港有几天
 statistic_df['WBL_AUD_DT'].astype('datetime64[D]')
