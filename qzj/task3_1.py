@@ -32,14 +32,14 @@ def cal_money(df, rate_list, start_day, end_day, rate_gate, discount):
             unchanged = False
             old_AMT_tmp = df.loc[day_index,'AMT']
             old_AMT = old_AMT + old_AMT_tmp
-            if day >= start_day & day < end_day:   
+            if (day >= start_day) & (day < end_day):   
                 today_price = df.loc[day_index,'AMT']
-                sales = df.loc[day_index,'sales_count_per_SVVD'] # 销量
-                today_price = today_price/sales # 单价
-                new_price = today_price + abs(today_price)*(discount-1) # 新单价，后面可以修改影响后的销量
-                new_sales = df.loc[day_index,'sales_count_per_SVVD'] # 新销量
-                #new_sales = calculate_daily_volume(new_price/40)
-                new_AMT_tmp = new_price*new_sales
+                sales = df.loc[day_index,'sales_count_per_day'] # 当日销量
+                today_per_price = today_price/sales # 单价
+                new_price = today_per_price + abs(today_per_price)*(discount-1) # 新单价，后面可以修改影响后的销量
+                new_sales = df.loc[day_index,'sales_count_per_day'] # 新销量
+                #new_sales = 40*calculate_daily_volume(new_price/40)
+                new_AMT_tmp = new_price*new_sales - today_price
                 new_AMT = new_AMT + new_AMT_tmp
                 print('in the day range')
                 
@@ -47,12 +47,15 @@ def cal_money(df, rate_list, start_day, end_day, rate_gate, discount):
                 print('out of day range')
 
         else:
-            new_AMT_tmp = df.loc[day_index,'AMT']
+            #new_AMT_tmp = df.loc[day_index,'AMT']
+            new_AMT_tmp = 0
             new_AMT = new_AMT + new_AMT_tmp
             print('平价')
         
         count = count + 1
-    return(new_AMT, old_AMT)
+    #return(new_AMT, old_AMT)
+    # 输出的是change
+    return(new_AMT)
 
 
 # 提取日期
@@ -106,30 +109,34 @@ for svvd in SVVD_list:
         sold_total = sold_total + sold_i
         rate_i = sold_total/a[0]
         rate_list.append(rate_i)
-    new_income1, old_income1 = cal_money(svvd_info, rate_list, 0, 5, 0.5, 1.3)
-    new_income2, old_income2 = cal_money(svvd_info, rate_list, 5, 7, 0.3, 0.5)
-    new_income3, old_income3 = cal_money(svvd_info, rate_list, 5, 7, 0.6, 1.4)
-    new_income4, old_income4 = cal_money(svvd_info, rate_list, 7, 8, 0.7, 1.4)
-    new_income5, old_income5 = cal_money(svvd_info, rate_list, 8, 15, 0.4, 0.5)
-    new_income6, old_income6 = cal_money(svvd_info, rate_list, 8, 15, 0.9, 1.2)
-    new_income7, old_income7 = cal_money(svvd_info, rate_list, 8, 15, 0.8, 1.2)
 
-    new_income = new_income1 + new_income2 + new_income3 + new_income4 + new_income5 + new_income6 + new_income7
-    old_income = old_income1 + old_income2 + old_income3 + old_income4 + old_income5 + old_income6 + old_income7
+    b = pd.DataFrame(rate_list)
+    b = b.set_index(pd.Series(range(first_index[0], first_index[0]+len(svvd_info))))
+    b.rename({0: 'sold_rate'}, axis=1, inplace=True)
+    svvd_info = tmp = pd.concat([svvd_info, b], axis=1)
+    tmp = pd.concat([tmp, svvd_info])
+
+    new_income1 = cal_money(svvd_info, rate_list, 0, 5, 0.5, 1.3)
+    new_income2 = cal_money(svvd_info, rate_list, 5, 7, 0.3, 0.5)
+    new_income3 = cal_money(svvd_info, rate_list, 5, 7, 0.6, 1.4)
+    new_income4 = cal_money(svvd_info, rate_list, 7, 8, 0.7, 1.4)
+    new_income5 = cal_money(svvd_info, rate_list, 8, 15, 0.4, 0.5)
+    new_income6 = cal_money(svvd_info, rate_list, 8, 15, 0.9, 1.2)
+    new_income7 = cal_money(svvd_info, rate_list, 8, 15, 0.8, 1.2)
+
+    new_income_change = new_income1 + new_income2 + new_income3 + new_income4 + new_income5 + new_income6 + new_income7
+    #old_income = old_income1 + old_income2 + old_income3 + old_income4 + old_income5 + old_income6 + old_income7
+    old_income = svvd_info['AMT'].sum()
+    new_income = new_income_change + old_income
     new_income_list.append(new_income)
     old_income_list.append(old_income)
-    b = pd.DataFrame(rate_list)
-    b.set_index(pd.Series(range(first_index[0], first_index[0]+len(svvd_info))))
-    b.rename({0: 'sold_rate'}, axis=1, inplace=True)
-    #tmp = pd.concat([svvd_info, b], axis=1)
-    tmp = pd.concat([tmp, svvd_info])
     
     tmp = tmp.sort_values(by=['SVVD', 'WBL_AUD_DT'], ascending=[False, False])
     print(2)
     
     
-imcome_change = pd.DataFrame({'SVVD': SVVD_list, 'new_income': new_income_list, 'old_income': old_income_list})
-
+income_change = pd.DataFrame({'SVVD': SVVD_list, 'new_income': new_income_list, 'old_income': old_income_list})
+income_change.to_csv('qzj/income_change_exsist_price_strategy.csv')
 #tmp_2 = tmp.sort_values(by='SVVD', ascending=True)
 #tmp_2.to_csv('qzj/habbits/sales_counts_AMT.csv')
 #time_list_df = pd.unique(statistic_df.groupby(['SVVD'])[['WBL_AUD_DT']])
