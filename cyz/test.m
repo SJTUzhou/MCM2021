@@ -27,3 +27,15 @@ amt = data(:,4);
 volume = data(:,5);
 log_amt = log10(amt);
 log_volume = log10(volume);
+% 
+a=88.4;
+b=-0.009267;
+amt_range = min(amt):0.01:max(amt);
+volume_regre = a*exp(b*amt_range);
+plot(amt, volume, "^");
+hold on;
+plot(amt_range, volume_regre, "-");
+xlabel("Freight rate per container");
+ylabel("Daily sales volume (the number of container) per voyage");
+xlim([min(amt)-10,max(amt)+100]);
+revenue = amt.*volume;
